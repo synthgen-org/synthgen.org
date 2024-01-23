@@ -1,8 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
+@import "colors.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&family=Source+Code+Pro:wght@400;600&display=swap');
 
-h1 {
-    color: #333;
+body {
+    background: var(--primary);
+    color: var(--secondary);
+    font-family: 'Open Sans', monospace;
+
+    & h1 {
+        color: var(--salmon);
+    }
+
+    & h2 {
+        color: var(--magenta);
+    }
 }
