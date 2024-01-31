@@ -5,5 +5,5 @@ The purpose of [SynthGen.org](https://synthgen.org) is to provide a specialized 
 The domain serves as a platform for organizations and individuals to access and implement credible markers denoting the origin of AI-generated content.
 
 Domains: 
-  synthen.org
-  coggen.org (points to synthgen.org)
+  [SynthGen.org](https://synthgen.org) 
+  [CogGen.org](https://coggen.org)  (points to [SynthGen.org](https://synthgen.org) )
