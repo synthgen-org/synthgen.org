@@ -12,6 +12,12 @@
     --green: #00ff00;
     --greenyellow: #adff2f;
     --aqua: #00ffff;
+
+    --background: var(--dark);
+    --foreground: var(--light);
+
+    --dark: #1a1a1a;  /*This is a deep, almost black color that serves as the primary background for your dark mode website.*/
+    --light: #efefef; /* White or off-white text provides high contrast against the dark background, ensuring readability. */
   }
 
   /*
