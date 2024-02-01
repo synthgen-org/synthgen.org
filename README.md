@@ -7,3 +7,8 @@ The domain serves as a platform for organizations and individuals to access and 
 Domains: 
   [SynthGen.org](https://synthgen.org) 
   [CogGen.org](https://coggen.org)  (points to [SynthGen.org](https://synthgen.org) )
+
+To run:
+
+node server.js
+
