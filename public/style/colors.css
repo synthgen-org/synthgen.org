@@ -13,44 +13,48 @@
     --greenyellow: #adff2f;
     --aqua: #00ffff;
 
-    --background: var(--dark);
-    --foreground: var(--light);
+    --primary-background: var(--darker);
+    --accent: var(--light);
+    --highlight: var(--bright);
+    --secondary-background: var(--dark);
 
-    --dark: #1a1a1a;  /*This is a deep, almost black color that serves as the primary background for your dark mode website.*/
+    --darker: #1a1a1a;  /*This is a deep, almost black color that serves as the primary background for your dark mode website.*/
     --light: #efefef; /* White or off-white text provides high contrast against the dark background, ensuring readability. */
+    --bright: #ffcc00; /*  A bright, futuristic blue can be used as an accent color for buttons, links, and other interactive elements. */
+    --dark: #333333; /*  A slightly lighter shade than the primary background can be used for secondary sections to create visual hierarchy. */
+  
   }
 
   /*
 
-  Primary Background Color: #1a1a1a
-
+Primary Background Color: #1a1a1a
 This is a deep, almost black color that serves as the primary background for your dark mode website.
+
 Primary Text Color: #ffffff
-
 White or off-white text provides high contrast against the dark background, ensuring readability.
+
 Accent Color: #4ea8e6
-
 A bright, futuristic blue can be used as an accent color for buttons, links, and other interactive elements.
+
 Highlight Color: #ffcc00
-
 A bold yellow can be used for highlights and call-to-action elements to draw attention.
+
 Secondary Background Color: #333333
-
 A slightly lighter shade than the primary background can be used for secondary sections to create visual hierarchy.
+
 Subdued Accent Color: #707070
-
 A muted gray can be used for less prominent accents or secondary interactive elements.
+
 Info/Notification Color: #ff9900
-
 Use an attention-grabbing orange for informational messages or notifications.
+
 Error/Alert Color: #ff3333
-
 A vibrant red can be used for error messages or alerts to make them stand out.
+
 Success Color: #66cc66
-
 A fresh green can be employed to indicate success or positive feedback.
-Link Color: #00bfff
 
+Link Color: #00bfff
 A bright cyan or light blue can be used for hyperlinks to make them stand out against the dark background.
 
 */
