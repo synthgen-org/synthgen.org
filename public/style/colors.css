@@ -18,19 +18,17 @@
     --highlight: var(--bright);
     --secondary-background: var(--dark);
     --light-accent: var(--gray);
+    --alert: var(--orange);
 
     --darker: #1a1a1a;  /* This is a deep, almost black color that serves as the primary background for your dark mode website.*/
     --light: #efefef; /* White or off-white text provides high contrast against the dark background, ensuring readability. */
     --bright: #ffcc00; /*  A bright, futuristic blue can be used as an accent color for buttons, links, and other interactive elements. */
     --dark: #333333; /*  A slightly lighter shade than the primary background can be used for secondary sections to create visual hierarchy. */
     --gray: #707070; /* A muted gray can be used for less prominent accents or secondary interactive elements. */
+    --orange: #ff9900; /* Use an attention-grabbing orange for informational messages or notifications. */
   }
 
   /*
-
-Info/Notification Color: #ff9900
-Use an attention-grabbing orange for informational messages or notifications.
-
 Error/Alert Color: #ff3333
 A vibrant red can be used for error messages or alerts to make them stand out.
 
