@@ -19,6 +19,7 @@
     --secondary-background: var(--dark);
     --light-accent: var(--gray);
     --alert: var(--orange);
+    --error: var(--red);
 
     --darker: #1a1a1a;  /* This is a deep, almost black color that serves as the primary background for your dark mode website.*/
     --light: #efefef; /* White or off-white text provides high contrast against the dark background, ensuring readability. */
@@ -26,12 +27,10 @@
     --dark: #333333; /*  A slightly lighter shade than the primary background can be used for secondary sections to create visual hierarchy. */
     --gray: #707070; /* A muted gray can be used for less prominent accents or secondary interactive elements. */
     --orange: #ff9900; /* Use an attention-grabbing orange for informational messages or notifications. */
+    --red: #ff3333; /* A vibrant red can be used for error messages or alerts to make them stand out. */
   }
 
   /*
-Error/Alert Color: #ff3333
-A vibrant red can be used for error messages or alerts to make them stand out.
-
 Success Color: #66cc66
 A fresh green can be employed to indicate success or positive feedback.
 
