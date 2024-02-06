@@ -21,6 +21,7 @@
     --alert: var(--orange);
     --error: var(--red);
     --success: var(--green);
+    --link: var(--blue);
 
     --darker: #1a1a1a;  /* This is a deep, almost black color that serves as the primary background for your dark mode website.*/
     --light: #efefef; /* White or off-white text provides high contrast against the dark background, ensuring readability. */
@@ -30,12 +31,5 @@
     --orange: #ff9900; /* Use an attention-grabbing orange for informational messages or notifications. */
     --red: #ff3333; /* A vibrant red can be used for error messages or alerts to make them stand out. */
     --green: #66cc66; /* A fresh green can be employed to indicate success or positive feedback. */
-
+    --blue: #00bfff; /* A bright cyan or light blue can be used for hyperlinks to make them stand out against the dark background. */
   }
-
-  /*
-
-Link Color: #00bfff
-A bright cyan or light blue can be used for hyperlinks to make them stand out against the dark background.
-
-*/
