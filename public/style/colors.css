@@ -9,13 +9,13 @@
     --success: var(--green);
     --link: var(--blue);
 
-    --darker: #1a1a1a;  /* This is a deep, almost black color that serves as the primary background for your dark mode website.*/
-    --light: #efefef; /* White or off-white text provides high contrast against the dark background, ensuring readability. */
-    --bright: #ffcc00; /*  A bright, futuristic blue can be used as an accent color for buttons, links, and other interactive elements. */
-    --dark: #333333; /*  A slightly lighter shade than the primary background can be used for secondary sections to create visual hierarchy. */
-    --gray: #707070; /* A muted gray can be used for less prominent accents or secondary interactive elements. */
-    --orange: #ff9900; /* Use an attention-grabbing orange for informational messages or notifications. */
-    --red: #ff3333; /* A vibrant red can be used for error messages or alerts to make them stand out. */
-    --green: #66cc66; /* A fresh green can be employed to indicate success or positive feedback. */
-    --blue: #00bfff; /* A bright cyan or light blue can be used for hyperlinks to make them stand out against the dark background. */
+    --darker: rgba(26, 26, 26, 1); /*  #1a1a1a This is a deep, almost black color that serves as the primary background for your dark mode website.*/
+    --light: rgba(239, 239, 239, 1); /* #efefef White or off-white text provides high contrast against the dark background, ensuring readability. */
+    --bright: rgba(255, 204, 0, 1); /* #ffcc00 A bright, futuristic blue can be used as an accent color for buttons, links, and other interactive elements. */
+    --dark: rgba(51, 51, 51, 1); /* #333333 A slightly lighter shade than the primary background can be used for secondary sections to create visual hierarchy. */
+    --gray: rgba(112, 112, 112, 1);/* #707070 A muted gray can be used for less prominent accents or secondary interactive elements. */
+    --orange: rgba(255, 153, 0, 1); /* #ff990 Use an attention-grabbing orange for informational messages or notifications. */
+    --red: rgba(255, 51, 51, 1); /* #ff3333 A vibrant red can be used for error messages or alerts to make them stand out. */
+    --green: rgba(102, 204, 102, 1); /* #66cc66 A fresh green can be employed to indicate success or positive feedback. */
+    --blue: rgba(0, 191, 255, 1) /* #00bfff A bright cyan or light blue can be used for hyperlinks to make them stand out against the dark background. */
   }
