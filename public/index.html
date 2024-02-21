@@ -10,10 +10,15 @@
 <body>
 
   <nav>
-    <!-- Use anchor tags for navigation -->
     <a href="/home">Home</a>
     <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/how-it-works">How it works</a>
+    <a href="/faqs">FAQs</a>
     <a href="/contact">Contact</a>
+    <a href="/terms-of-service">Terms of Service</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/get-started">Get Started</a>
   </nav>
 
   <div id="content">
@@ -36,8 +41,20 @@
         content = "<h2>Welcome to the Home Page!</h2>";
       } else if (path === '/about') {
         content = "<h2>About Us</h2><p>This is the about page content.</p>";
+      } else if (path === '/services') {
+        content = "<h2>Our Services</h2><p>Explore our range of services.</p>";
+      } else if (path === '/how-it-works') {
+        content = "<h2>How It Works</h2><p>Learn about the process.</p>";
+      } else if (path === '/faqs') {
+        content = "<h2>Frequently Asked Questions</h2><p>Find answers to common questions.</p>";
       } else if (path === '/contact') {
         content = "<h2>Contact Us</h2><p>Feel free to reach out!</p>";
+      } else if (path === '/terms-of-service') {
+        content = "<h2>Terms of Service</h2><p>Read our terms and conditions.</p>";
+      } else if (path === '/privacy-policy') {
+        content = "<h2>Privacy Policy</h2><p>Learn about our privacy practices.</p>";
+      } else if (path === '/get-started') {
+        content = "<h2>Get Started</h2><p>Begin your journey with us.</p>";
       }
 
       // Update the content div
