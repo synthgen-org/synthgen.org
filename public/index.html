@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/main.css">
-    <title>My Vanilla Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/main.css">
+  <title>SynthGen.org</title>
+
 </head>
 <body>
-    <h1>Hello, Vanilla!</h1>
+
+  <nav>
+    <!-- Use anchor tags for navigation -->
+    <a href="/home">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <div id="content">
+    <!-- Content will be dynamically replaced here -->
+  </div>
+
+  <script>
+    // Function to handle navigation and update content
+    function navigate(path) {
+      fetchContent(path);
+      // Push the state to the history
+      history.pushState({ path: path }, null, path);
+    }
+
+    // Function to fetch and update content
+    function fetchContent(path) {
+      // Simulate fetching content based on the path
+      let content = "<h2>Page not found</h2>";
+      if (path === '/home') {
+        content = "<h2>Welcome to the Home Page!</h2>";
+      } else if (path === '/about') {
+        content = "<h2>About Us</h2><p>This is the about page content.</p>";
+      } else if (path === '/contact') {
+        content = "<h2>Contact Us</h2><p>Feel free to reach out!</p>";
+      }
+
+      // Update the content div
+      document.getElementById('content').innerHTML = content;
+    }
+
+    // Function to handle back and forward navigation
+    window.onpopstate = function (event) {
+      if (event.state) {
+        fetchContent(event.state.path);
+      }
+    };
+
+    // Initial content based on the current path
+    const initialPath = window.location.pathname;
+    fetchContent(initialPath);
+
+    // Prevent default navigation and use our custom function
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        navigate(link.getAttribute('href'));
+      });
+    });
+  </script>
+
 </body>
 </html>
