@@ -30,6 +30,60 @@
     <footer>
       <p>&copy; 2024 SynthGen.org. All rights reserved.</p>
     </footer>
+
+    <!-- Home Component -->
+    <script>
+      class HomeComp extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" });
+          this.shadowRoot.innerHTML = `
+              <style>
+                  /* Add home-comp styles here */
+              </style>
+              <h2>Welcome to the Home Page!</h2>
+          `;
+        }
+      }
+      customElements.define("home-comp", HomeComp);
+    </script>
+
+    <!-- About Component -->
+    <script>
+      class AboutComp extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" });
+          this.shadowRoot.innerHTML = `
+              <style>
+                  /* Add about-comp styles here */
+              </style>
+              <h2>About Us</h2><p>This is the about page content.</p>
+          `;
+        }
+      }
+      customElements.define("about-comp", AboutComp);
+    </script>
+
+    <!-- Contact Component -->
+    <script>
+      class ContactComp extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" });
+          this.shadowRoot.innerHTML = `
+              <style>
+                  /* Add contact-comp styles here */
+              </style>
+              <h2>Contact Us</h2><p>Feel free to reach out!</p>
+          `;
+        }
+      }
+      customElements.define("contact-comp", ContactComp);
+    </script>
+
+    <!-- ... previous HTML code ... -->
+
     <script>
       // Call the function when the page loads
       window.addEventListener("DOMContentLoaded", function () {
@@ -59,13 +113,21 @@
       function fetchContent(path) {
         // Simulate fetching content based on the path
         let content = "<h2>Page not found</h2>";
-        if (path === "/home" || path === "/") {
-          content = "<home-comp></home-comp>";
-        } else if (path === "/about") {
-          content = "<about-comp></about-comp>";
-        } else if (path === "/contact") {
-          content = "<contact-comp></contact-comp>";
+
+        // Update content based on the path
+        switch (path) {
+          case "/home":
+          case "/":
+            content = "<home-comp></home-comp>";
+            break;
+          case "/about":
+            content = "<about-comp></about-comp>";
+            break;
+          case "/contact":
+            content = "<contact-comp></contact-comp>";
+            break;
         }
+
         // Update the content div
         document.getElementById("content").innerHTML = content;
       }
