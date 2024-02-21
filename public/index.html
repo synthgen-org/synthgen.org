@@ -32,6 +32,52 @@
     </footer>
 
     <script>
+      class BaseContent extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: 'open' });
+        }
+      }
+
+      class HomeComp extends BaseContent {
+        constructor() {
+          super();
+          this.shadowRoot.innerHTML = `
+                  <style>
+                      /* Add home-comp styles here */
+                  </style>
+                  <h2>Welcome to the Home Page!</h2>
+              `;
+        }
+      }
+      customElements.define('home-comp', HomeComp);
+
+      class AboutComp extends BaseContent {
+        constructor() {
+          super();
+          this.shadowRoot.innerHTML = `
+                  <style>
+                      /* Add about-comp styles here */
+                  </style>
+                  <h2>About Us</h2><p>This is the about page content.</p>
+              `;
+        }
+      }
+      customElements.define('about-comp', AboutComp);
+
+      class ContactComp extends BaseContent {
+        constructor() {
+          super();
+          this.shadowRoot.innerHTML = `
+                  <style>
+                      /* Add contact-comp styles here */
+                  </style>
+                  <h2>Contact Us</h2><p>Feel free to reach out!</p>
+              `;
+        }
+      }
+      customElements.define('contact-comp', ContactComp);
+
       // Function to handle navigation and update content
       function navigate(path) {
         fetchContent(path);
@@ -44,29 +90,15 @@
         // Simulate fetching content based on the path
         let content = "<h2>Page not found</h2>";
         if (path === "/home" || path === "/") {
-          content = "<h2>Welcome to the Home Page!</h2>";
+          const homeComp = document.createElement('home-comp');
+          content = homeComp.outerHTML;
         } else if (path === "/about") {
-          content = "<h2>About Us</h2><p>This is the about page content.</p>";
-        } else if (path === "/services") {
-          content =
-            "<h2>Our Services</h2><p>Explore our range of services.</p>";
-        } else if (path === "/how-it-works") {
-          content = "<h2>How It Works</h2><p>Learn about the process.</p>";
-        } else if (path === "/faqs") {
-          content =
-            "<h2>Frequently Asked Questions</h2><p>Find answers to common questions.</p>";
+          const aboutComp = document.createElement('about-comp');
+          content = aboutComp.outerHTML;
         } else if (path === "/contact") {
-          content = "<h2>Contact Us</h2><p>Feel free to reach out!</p>";
-        } else if (path === "/terms-of-service") {
-          content =
-            "<h2>Terms of Service</h2><p>Read our terms and conditions.</p>";
-        } else if (path === "/privacy-policy") {
-          content =
-            "<h2>Privacy Policy</h2><p>Learn about our privacy practices.</p>";
-        } else if (path === "/get-started") {
-          content = "<h2>Get Started</h2><p>Begin your journey with us.</p>";
+          const contactComp = document.createElement('contact-comp');
+          content = contactComp.outerHTML;
         }
-
         // Update the content div
         document.getElementById("content").innerHTML = content;
       }
