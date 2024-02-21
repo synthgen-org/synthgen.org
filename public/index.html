@@ -32,7 +32,7 @@
     function fetchContent(path) {
       // Simulate fetching content based on the path
       let content = "<h2>Page not found</h2>";
-      if (path === '/home') {
+      if (path === '/home' || path === '/') {
         content = "<h2>Welcome to the Home Page!</h2>";
       } else if (path === '/about') {
         content = "<h2>About Us</h2><p>This is the about page content.</p>";
