@@ -1,31 +1,35 @@
 // Call the function when the page loads
 window.addEventListener("DOMContentLoaded", function () {
-    handleInitialContent();
-  
-    // Additional check for direct navigation
-    const currentPath = window.location.pathname;
-    if (currentPath !== "/" && currentPath !== "/home") {
-      fetchContent(currentPath);
-    }
-  });
-  
-  // Function to handle initial content based on the current path
-  function handleInitialContent() {
-    const initialPath = window.location.pathname;
-    fetchContent(initialPath);
+  handleInitialContent();
+
+  // Additional check for direct navigation
+  const currentPath = window.location.pathname;
+  if (currentPath !== "/" && currentPath !== "/home") {
+    fetchContent(currentPath);
   }
-  
-  // Function to handle navigation and update content
-  function navigate(path) {
-    fetchContent(path);
-    // Push the state to the history
-    history.pushState({ path: path }, null, path);
-  }
-  
-  // Function to fetch and update content
-  function fetchContent(path) {
+});
+
+// Function to handle initial content based on the current path
+function handleInitialContent() {
+  const initialPath = window.location.pathname;
+  fetchContent(initialPath);
+}
+
+// Function to handle navigation and update content
+function navigate(path) {
+  fetchContent(path);
+  // Push the state to the history
+  history.pushState({ path: path }, null, path);
+}
+
+// Function to fetch and update content
+function fetchContent(path) {
+  const contentContainer = document.getElementById("content");
+  contentContainer.innerHTML = "<loading-comp></loading-comp>";
+
+  try {
     // Simulate fetching content based on the path
-    let content = "<error-comp></error-comp>";
+    let content = "<h2>Page not found</h2>";
     if (path === "/home" || path === "/") {
       content = "<home-comp></home-comp>";
     } else if (path === "/about") {
@@ -47,20 +51,24 @@ window.addEventListener("DOMContentLoaded", function () {
     }
     // Update the content div
     document.getElementById("content").innerHTML = content;
+  } catch (error) {
+    console.error("Error fetching content:", error);
+    // Handle errors and show an error component
+    contentContainer.innerHTML = "<error-comp></error-comp>";
   }
-  
-  // Function to handle back and forward navigation
-  window.onpopstate = function (event) {
-    if (event.state) {
-      fetchContent(event.state.path);
-    }
-  };
-  
-  // Prevent default navigation and use our custom function
-  document.querySelectorAll("nav a").forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      navigate(link.getAttribute("href"));
-    });
+}
+
+// Function to handle back and forward navigation
+window.onpopstate = function (event) {
+  if (event.state) {
+    fetchContent(event.state.path);
+  }
+};
+
+// Prevent default navigation and use our custom function
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    navigate(link.getAttribute("href"));
   });
-  
+});
