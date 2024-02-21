@@ -82,6 +82,108 @@
       customElements.define("contact-comp", ContactComp);
     </script>
 
+    <!-- Services Component -->
+    <script>
+      class ServicesComp extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" });
+          this.shadowRoot.innerHTML = `
+              <style>
+                  /* Add services-comp styles here */
+              </style>
+              <h2>Our Services</h2><p>Explore our various services.</p>
+          `;
+        }
+      }
+      customElements.define("services-comp", ServicesComp);
+    </script>
+
+    <!-- How It Works Component -->
+    <script>
+      class HowItWorksComp extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" });
+          this.shadowRoot.innerHTML = `
+              <style>
+                  /* Add how-it-works-comp styles here */
+              </style>
+              <h2>How It Works</h2><p>Learn about our process.</p>
+          `;
+        }
+      }
+      customElements.define("how-it-works-comp", HowItWorksComp);
+    </script>
+
+    <!-- FAQs Component -->
+    <script>
+      class FAQsComp extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" });
+          this.shadowRoot.innerHTML = `
+              <style>
+                  /* Add faqs-comp styles here */
+              </style>
+              <h2>Frequently Asked Questions</h2><p>Find answers to common questions.</p>
+          `;
+        }
+      }
+      customElements.define("faqs-comp", FAQsComp);
+    </script>
+
+    <!-- Terms of Service Component -->
+    <script>
+      class TermsOfServiceComp extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" });
+          this.shadowRoot.innerHTML = `
+              <style>
+                  /* Add terms-of-service-comp styles here */
+              </style>
+              <h2>Terms of Service</h2><p>Read our terms and conditions.</p>
+          `;
+        }
+      }
+      customElements.define("terms-of-service-comp", TermsOfServiceComp);
+    </script>
+
+    <!-- Privacy Policy Component -->
+    <script>
+      class PrivacyPolicyComp extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" });
+          this.shadowRoot.innerHTML = `
+              <style>
+                  /* Add privacy-policy-comp styles here */
+              </style>
+              <h2>Privacy Policy</h2><p>Understand how we handle privacy.</p>
+          `;
+        }
+      }
+      customElements.define("privacy-policy-comp", PrivacyPolicyComp);
+    </script>
+
+    <!-- Get Started Component -->
+    <script>
+      class GetStartedComp extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" });
+          this.shadowRoot.innerHTML = `
+              <style>
+                  /* Add get-started-comp styles here */
+              </style>
+              <h2>Get Started</h2><p>Begin your journey with us.</p>
+          `;
+        }
+      }
+      customElements.define("get-started-comp", GetStartedComp);
+    </script>
+
     <!-- ... previous HTML code ... -->
 
     <script>
@@ -125,6 +227,24 @@
             break;
           case "/contact":
             content = "<contact-comp></contact-comp>";
+            break;
+          case "/services":
+            content = "<services-comp></services-comp>";
+            break;
+          case "/how-it-works":
+            content = "<how-it-works-comp></how-it-works-comp>";
+            break;
+          case "/faqs":
+            content = "<faqs-comp></faqs-comp>";
+            break;
+          case "/terms-of-service":
+            content = "<terms-of-service-comp></terms-of-service-comp>";
+            break;
+          case "/privacy-policy":
+            content = "<privacy-policy-comp></privacy-policy-comp>";
+            break;
+          case "/get-started":
+            content = "<get-started-comp></get-started-comp>";
             break;
         }
 
