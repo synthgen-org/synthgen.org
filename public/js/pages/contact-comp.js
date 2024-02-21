@@ -1,7 +1,6 @@
-class ContactComp extends HTMLElement {
+class ContactComp extends BaseContent  {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
         this.shadowRoot.innerHTML = `
             <style>
                 /* Add contact-comp styles here */

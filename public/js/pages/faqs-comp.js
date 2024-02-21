@@ -1,7 +1,6 @@
-class FAQSComp extends HTMLElement {
+class FAQSComp extends BaseContent  {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
         this.shadowRoot.innerHTML = `
             <style>
                 /* Add faqs-comp styles here */

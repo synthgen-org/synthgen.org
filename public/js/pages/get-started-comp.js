@@ -1,7 +1,6 @@
-class GetStartedComp extends HTMLElement {
+class GetStartedComp extends BaseContent {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
         this.shadowRoot.innerHTML = `
             <style>
                 /* Add get-started-comp styles here */

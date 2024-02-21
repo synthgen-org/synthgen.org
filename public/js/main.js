@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", function () {
   // Function to fetch and update content
   function fetchContent(path) {
     // Simulate fetching content based on the path
-    let content = "<h2>Page not found</h2>";
+    let content = "<error-comp></error-comp>";
     if (path === "/home" || path === "/") {
       content = "<home-comp></home-comp>";
     } else if (path === "/about") {

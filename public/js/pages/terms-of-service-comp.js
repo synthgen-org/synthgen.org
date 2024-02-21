@@ -1,7 +1,6 @@
-class TermsOfServicesComp extends HTMLElement {
+class TermsOfServiceComp extends BaseContent {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
         this.shadowRoot.innerHTML = `
             <style>
                 /* Add terms-of-services-comp styles here */
@@ -10,4 +9,4 @@ class TermsOfServicesComp extends HTMLElement {
         `;
     }
 }
-customElements.define("terms-of-services-comp", TermsOfServicesComp);
+customElements.define("terms-of-service-comp", TermsOfServiceComp);

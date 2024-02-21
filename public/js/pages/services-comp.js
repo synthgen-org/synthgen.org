@@ -1,7 +1,6 @@
-class ServicesComp extends HTMLElement {
+class ServicesComp extends BaseContent {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
         this.shadowRoot.innerHTML = `
             <style>
                 /* Add services-comp styles here */

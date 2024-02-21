@@ -1,7 +1,6 @@
-class AboutComp extends HTMLElement {
+class AboutComp extends BaseContent  {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
         this.shadowRoot.innerHTML = `
             <style>
                 /* Add home-comp styles here */

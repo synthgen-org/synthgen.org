@@ -1,7 +1,6 @@
-class PrivacyPolicyComp extends HTMLElement {
+class PrivacyPolicyComp extends BaseContent {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
         this.shadowRoot.innerHTML = `
             <style>
                 /* Add privacy-policy-comp styles here */

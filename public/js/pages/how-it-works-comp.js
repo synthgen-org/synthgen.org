@@ -1,7 +1,6 @@
-class HowItWorksComp extends HTMLElement {
+class HowItWorksComp extends BaseContent {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
         this.shadowRoot.innerHTML = `
             <style>
                 /* Add how-it-works-comp styles here */
