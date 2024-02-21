@@ -15,6 +15,20 @@ const server = http.createServer((req, res) => {
     // Read the file and serve it
     fs.readFile(path.join(__dirname, 'public', filePath), (err, data) => {
         if (err) {
+            // Check if the request is for a non-existing file
+            if (req.url !== '/' && !req.url.includes('.')) {
+                // Serve the main HTML file for non-existing routes
+                return fs.readFile(path.join(__dirname, 'public', '/index.html'), (err, data) => {
+                    if (err) {
+                        res.writeHead(404, { 'Content-Type': 'text/plain' });
+                        res.end('Not Found');
+                    } else {
+                        res.writeHead(200, { 'Content-Type': 'text/html' });
+                        res.end(data);
+                    }
+                });
+            }
+
             res.writeHead(404, { 'Content-Type': 'text/plain' });
             res.end('Not Found');
         } else {
