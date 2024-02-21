@@ -23,60 +23,34 @@
       <a href="/get-started">Get Started</a>
     </nav>
 
-    <div id="content">
+    <main id="content">
       <!-- Content will be dynamically replaced here -->
-    </div>
+    </main>
 
     <footer>
       <p>&copy; 2024 SynthGen.org. All rights reserved.</p>
     </footer>
 
+    <!-- ... previous HTML code ... -->
+
     <script>
-      class BaseContent extends HTMLElement {
-        constructor() {
-          super();
-          this.attachShadow({ mode: 'open' });
-        }
-      }
+      // Call the function when the page loads
+      window.addEventListener("DOMContentLoaded", function () {
+        alert("page loaded");
+        handleInitialContent();
 
-      class HomeComp extends BaseContent {
-        constructor() {
-          super();
-          this.shadowRoot.innerHTML = `
-                  <style>
-                      /* Add home-comp styles here */
-                  </style>
-                  <h2>Welcome to the Home Page!</h2>
-              `;
+        // Additional check for direct navigation
+        const currentPath = window.location.pathname;
+        if (currentPath !== "/" && currentPath !== "/home") {
+          fetchContent(currentPath);
         }
-      }
-      customElements.define('home-comp', HomeComp);
+      });
 
-      class AboutComp extends BaseContent {
-        constructor() {
-          super();
-          this.shadowRoot.innerHTML = `
-                  <style>
-                      /* Add about-comp styles here */
-                  </style>
-                  <h2>About Us</h2><p>This is the about page content.</p>
-              `;
-        }
+      // Function to handle initial content based on the current path
+      function handleInitialContent() {
+        const initialPath = window.location.pathname;
+        fetchContent(initialPath);
       }
-      customElements.define('about-comp', AboutComp);
-
-      class ContactComp extends BaseContent {
-        constructor() {
-          super();
-          this.shadowRoot.innerHTML = `
-                  <style>
-                      /* Add contact-comp styles here */
-                  </style>
-                  <h2>Contact Us</h2><p>Feel free to reach out!</p>
-              `;
-        }
-      }
-      customElements.define('contact-comp', ContactComp);
 
       // Function to handle navigation and update content
       function navigate(path) {
@@ -90,14 +64,11 @@
         // Simulate fetching content based on the path
         let content = "<h2>Page not found</h2>";
         if (path === "/home" || path === "/") {
-          const homeComp = document.createElement('home-comp');
-          content = homeComp.outerHTML;
+          content = "<home-comp></home-comp>";
         } else if (path === "/about") {
-          const aboutComp = document.createElement('about-comp');
-          content = aboutComp.outerHTML;
+          content = "<about-comp></about-comp>";
         } else if (path === "/contact") {
-          const contactComp = document.createElement('contact-comp');
-          content = contactComp.outerHTML;
+          content = "<contact-comp></contact-comp>";
         }
         // Update the content div
         document.getElementById("content").innerHTML = content;
@@ -109,10 +80,6 @@
           fetchContent(event.state.path);
         }
       };
-
-      // Initial content based on the current path
-      const initialPath = window.location.pathname;
-      fetchContent(initialPath);
 
       // Prevent default navigation and use our custom function
       document.querySelectorAll("nav a").forEach((link) => {
