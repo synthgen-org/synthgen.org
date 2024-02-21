@@ -14,3 +14,42 @@ body {
         color: var(--light-accent);
     }
 }
+
+header {
+    background-color: var(--secondary-background);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav {
+    background-color: var(--secondary-background);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav a {
+    color: var(--light-accent);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--highlight);
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: var(--secondary-background);
+    padding: 10px;
+    text-align: center;
+  }
