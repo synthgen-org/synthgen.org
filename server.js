@@ -1,3 +1,5 @@
+require('dotenv').config(); 
+
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -39,6 +41,8 @@ app.get('*', (req, res) => {
 });
 
 const PORT = process.env.PORT || 8080;
+const ENVIRONMENT = process.env.ENVIRONMENT || "UNKNOWN";
+console.log("Environment is " + ENVIRONMENT);
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
