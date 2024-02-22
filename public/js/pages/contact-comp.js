@@ -3,7 +3,43 @@ class ContactComp extends BaseContent  {
         super();
         this.shadowRoot.innerHTML = `
             <style>
-                /* Add contact-comp styles here */
+
+            section {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            article {
+                margin-bottom: 20px;
+            }
+
+            form {
+                display: grid;
+                gap: 10px;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+            }
+
+            button {
+                padding: 10px;
+                background-color: #3498db;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #2980b9;
+            }
             </style>
             <section id="contact">
             <h2>Contact Us</h2>
