@@ -17,14 +17,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Endpoint to handle form submissions
 app.post('/submit-contact', (req, res) => {
-    //TODO: finish this
-    // Process the form data and send a response
-    // (You can perform any necessary processing here)
-    const { name, email, message } = req.body;
-    console.log('Form Data:', { name, email, message });
+    try {
+        // Process the form data and send a response
+        // (You can perform any necessary processing here)
+        const { name, email, message } = req.body;
+        console.log('Form Data:', { name, email, message });
 
-    // Instead of sending a dedicated thank-you page, redirect to the home page
-    res.redirect('/home')
+        // Render the thank-you component
+        const thankYouContent = fs.readFileSync(path.join(__dirname, 'public', 'thank-you.html'), 'utf8');
+        res.send(thankYouContent);
+    } catch (error) {
+        console.error('Error processing form:', error);
+        res.status(500).send('Internal Server Error');
+    }
 });
 
 // Fallback to serving the main HTML file for non-existing routes
