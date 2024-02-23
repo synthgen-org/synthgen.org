@@ -2,6 +2,7 @@ class HomeComp extends BaseContent {
   constructor() {
     super();
     this.shadowRoot.innerHTML = `
+
         <style>
         /* Add home-comp styles here */
     </style>
