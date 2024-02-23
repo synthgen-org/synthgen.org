@@ -52,8 +52,6 @@ function fetchContent(path) {
       content = "<sign-up-comp></sign-up-comp>";
     } else if (path === "/thank-you") {
       content = "<thank-you-comp></thank-you-comp>";
-    } else if (path === "/submit-contact") {
-      content = "<submit-contact-comp></submit-contact-comp>";
     }
     // Update the content div
     document.getElementById("content").innerHTML = content;
