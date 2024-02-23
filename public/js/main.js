@@ -50,6 +50,10 @@ function fetchContent(path) {
       content = "<get-started-comp></get-started-comp>";
     } else if (path === "/sign-up") {
       content = "<sign-up-comp></sign-up-comp>";
+    } else if (path === "/thank-you") {
+      content = "<thank-you-comp></thank-you-comp>";
+    } else if (path === "/submit-contact") {
+      content = "<submit-contact-comp></submit-contact-comp>";
     }
     // Update the content div
     document.getElementById("content").innerHTML = content;
