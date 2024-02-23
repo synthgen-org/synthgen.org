@@ -23,8 +23,23 @@ app.post('/submit-contact', (req, res) => {
     // For now, let's just log the form data
     console.log('Form Data:', { name, email, message });
 
-    // Send a response
-    res.json({ success: true, message: 'Form submitted successfully!' });
+    // TODO: Process the form data and send a response
+    // For demonstration, let's assume the form is always successful
+    const responseMessage = `Thank you, ${name}! We have received your message.`;
+
+    // Read the "thank-you.html" file
+    fs.readFile(path.join(__dirname, 'public', 'thank-you.html'), 'utf8', (err, data) => {
+        if (err) {
+            res.writeHead(500, { 'Content-Type': 'text/plain' });
+            res.end('Internal Server Error');
+        } else {
+            // Replace the placeholder in the HTML with the actual message
+            const thankYouPage = data.replace('{{message}}', responseMessage);
+
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.end(thankYouPage);
+        }
+    });
 });
 
 // Fallback to serving the main HTML file for non-existing routes
