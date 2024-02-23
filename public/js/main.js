@@ -48,6 +48,8 @@ function fetchContent(path) {
       content = "<privacy-policy-comp></privacy-policy-comp>";
     } else if (path === "/get-started") {
       content = "<get-started-comp></get-started-comp>";
+    } else if (path === "/sign-up") {
+      content = "<sign-up-comp></sign-up-comp>";
     }
     // Update the content div
     document.getElementById("content").innerHTML = content;
