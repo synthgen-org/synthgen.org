@@ -17,29 +17,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Endpoint to handle form submissions
 app.post('/submit-contact', (req, res) => {
-    const { name, email, message } = req.body;
+    try {
+        // Process the form data and send a response
+        // (You can perform any necessary processing here)
+        const { name, email, message } = req.body;
+        console.log('Form Data:', { name, email, message });
 
-    // Perform any necessary processing here
-    // For now, let's just log the form data
-    console.log('Form Data:', { name, email, message });
-
-    // TODO: Process the form data and send a response
-    // For demonstration, let's assume the form is always successful
-    const responseMessage = `Thank you, ${name}! We have received your message.`;
-
-    // Read the "thank-you.html" file
-    fs.readFile(path.join(__dirname, 'public', 'thank-you.html'), 'utf8', (err, data) => {
-        if (err) {
-            res.writeHead(500, { 'Content-Type': 'text/plain' });
-            res.end('Internal Server Error');
-        } else {
-            // Replace the placeholder in the HTML with the actual message
-            const thankYouPage = data.replace('{{message}}', responseMessage);
-
-            res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.end(thankYouPage);
-        }
-    });
+        // Render the thank-you component
+        const thankYouContent = fs.readFileSync(path.join(__dirname, 'public', 'thank-you.html'), 'utf8');
+        res.send(thankYouContent);
+    } catch (error) {
+        console.error('Error processing form:', error);
+        res.status(500).send('Internal Server Error');
+    }
 });
 
 // Fallback to serving the main HTML file for non-existing routes
