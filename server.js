@@ -5,8 +5,22 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
+const admin = require('firebase-admin');
 
 const app = express();
+
+// Initialize Firebase Admin SDK
+const serviceAccount = {
+    "type": "service_account",
+    "project_id": process.env.FIREBASE_PROJECT_ID,
+    "private_key_id": process.env.FIREBASE_PRIVATE_KEY_ID,
+    "private_key": process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+    "client_email": process.env.FIREBASE_CLIENT_EMAIL,
+    "client_id": process.env.FIREBASE_CLIENT_ID,
+    "token_uri": process.env.FIREBASE_AUTH_DOMAIN,
+    "auth_provider_x509_cert_url": process.env.FIREBASE_AUTH_DOMAIN,
+    "client_x509_cert_url": process.env.FIREBASE_AUTH_DOMAIN
+  };
 
 // Middleware to parse JSON and form data
 app.use(bodyParser.json());
