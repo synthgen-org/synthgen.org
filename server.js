@@ -22,6 +22,11 @@ const serviceAccount = {
     "client_x509_cert_url": process.env.FIREBASE_AUTH_DOMAIN
   };
 
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: `https://${process.env.FIREBASE_PROJECT_ID}.firebaseio.com`
+  });
+
 // Middleware to parse JSON and form data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
