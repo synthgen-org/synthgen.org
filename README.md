@@ -6,10 +6,6 @@ SynthGen.org aims to authenticate and mark content produced through artificial i
 
 The domain serves as a platform for organizations and individuals to access and implement credible markers denoting the origin of AI-generated content.
 
-Domains: 
-  [SynthGen.org](https://synthgen.org) 
-  [CogGen.org](https://coggen.org)  (points to [SynthGen.org](https://synthgen.org) )
-
 To run:
 
 npm install 
