@@ -4,7 +4,7 @@ The purpose of [SynthGen.org](https://synthgen.org) is to provide a specialized 
 
 SynthGen.org aims to authenticate and mark content produced through artificial intelligence, allowing websites and publications to signify the use of AI technology in the creation process. 
 
-The domain serves as a platform for organizations and individuals to access and implement credible markers denoting the origin of AI-generated content.
+The site serves as a platform for organizations and individuals to access and implement credible markers denoting the origin of AI-generated content.
 
 To run:
 
