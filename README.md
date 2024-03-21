@@ -6,10 +6,8 @@ SynthGen.org aims to authenticate and mark content produced through artificial i
 
 The site serves as a platform for organizations and individuals to access and implement credible markers denoting the origin of AI-generated content.
 
-`
 To run:
 
 npm install 
 
 node server.js
-`
