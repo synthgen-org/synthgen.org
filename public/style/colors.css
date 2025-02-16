@@ -20,3 +20,8 @@
     --blue: rgba(0, 191, 255, 1); /* #00bfff  A bright cyan or light blue can be used for hyperlinks to make them stand out against the dark background. */
     --cyan: rgba(105, 226, 240, 1); /* Vibrant and tech-forward. */
     --teal: rgba(46, 136, 165, 1); /* A deep, rich teal with a grounded, professional contrast.*/
+
+    /* hexagon background */
+    --hexagon-size: 40px; /* Base size of the hexagon */
+    --hexagon-height: calc(var(--hexagon-size) * 0.866); /* Height of a hexagon (√3/2 * size) */
+    --hexagon-color-1: #fb1; /* Primary color */
