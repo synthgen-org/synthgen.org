@@ -14,10 +14,14 @@ body {
     & h2 {
         color: var(--light-accent);
     }
+
+    & p {
+        color: var(--darker);
+    }
 }
 
 header {
-  background-color: var(--secondary-background);
+  background-color: var(--light);
   padding: 20px;
   text-align: center;
 }
