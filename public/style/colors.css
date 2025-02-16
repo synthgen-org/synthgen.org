@@ -25,3 +25,4 @@
     --hexagon-size: 40px; /* Base size of the hexagon */
     --hexagon-height: calc(var(--hexagon-size) * 0.866); /* Height of a hexagon (√3/2 * size) */
     --hexagon-color-1: #fb1; /* Primary color */
+    --hexagon-color-2: #b71; /* Secondary color */
