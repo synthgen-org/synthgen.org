@@ -1,6 +1,6 @@
 # SynthGen ✨ synthgen.org
 
-The purpose of [SynthGen.org](https://synthgen.org) is to provide a specialized service offering AI-generated content badges or watermarks. 
+[SynthGen.org](https://synthgen.org) is to provide a specialized service offering AI-generated content badges or watermarks. 
 
 SynthGen.org aims to authenticate and mark content produced through artificial intelligence, allowing websites and publications to signify the use of AI technology in the creation process. 
 
