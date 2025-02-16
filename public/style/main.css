@@ -10,6 +10,9 @@ body {
 
   & h1 {
     color: var(--highlight);
+    text-shadow: 2px 2px 2px var(--cyan);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--darker);
   }
 
   & h2 {
@@ -92,7 +95,11 @@ nav:before {
   width: 100%;
   height: 5px;
   z-index: 1;
-  background-color: var(--cyan);
+  background: linear-gradient(
+    to right,
+    var(--cyan) 0%,
+    var(--teal) 100%
+  );
 }
 /* Basic styling for 
 the nav */
@@ -123,7 +130,7 @@ nav {
 }
 
 #menu a:hover {
-  color: #ff6347;
+  color: var(--highlight);
   /* Hover effect */
 }
 
