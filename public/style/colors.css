@@ -17,6 +17,6 @@
     --orange: rgba(255, 153, 0, 1); /* #ff990 Use an attention-grabbing orange for informational messages or notifications. */
     --red: rgba(255, 51, 51, 1); /* #ff3333 A vibrant red can be used for error messages or alerts to make them stand out. */
     --green: rgba(102, 204, 102, 1); /* #66cc66 A fresh green can be employed to indicate success or positive feedback. */
-    --blue: rgba(0, 191, 255, 1) /* #00bfff A bright cyan or light blue can be used for hyperlinks to make them stand out against the dark background. */
-  
-  }
+    --blue: rgba(0, 191, 255, 1); /* #00bfff  A bright cyan or light blue can be used for hyperlinks to make them stand out against the dark background. */
+    --cyan: rgba(105, 226, 240, 1); /* Vibrant and tech-forward. */
+    --teal: rgba(46, 136, 165, 1); /* A deep, rich teal with a grounded, professional contrast.*/
