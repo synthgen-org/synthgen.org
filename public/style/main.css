@@ -28,8 +28,10 @@ header {
 }
 
 header:before {
-  content: ""; /* Required for pseudo-elements */
-  position: absolute; /* Positions the pseudo-element relative to the parent */
+  content: "";
+  /* Required for pseudo-elements */
+  position: absolute;
+  /* Positions the pseudo-element relative to the parent */
   top: 0;
   left: 0;
   width: 100%;
@@ -42,51 +44,110 @@ header:before {
     linear-gradient(30deg, var(--background-color-primary) 24%, var(--background-color-secondary) 0, var(--background-color-secondary) 26%, var(--color-transparent) 0, var(--color-transparent) 74%, var(--background-color-secondary) 0, var(--background-color-secondary) 76%, var(--background-color-primary) 0) 0 0,
     linear-gradient(90deg, var(--background-color-secondary) 2%, var(--background-color-primary) 0, var(--background-color-primary) 98%, var(--background-color-secondary) 0%) 0 0 var(--background-color-primary);
   background-size: 40px 60px;
-  z-index: -2; /* Places the pseudo-element behind the content */
+  z-index: -2;
+  /* Places the pseudo-element behind the content */
 }
 
 header:after {
-  content: ""; /* Required for pseudo-elements */
-  position: absolute; /* Positions the pseudo-element relative to the parent */
+  content: "";
+  /* Required for pseudo-elements */
+  position: absolute;
+  /* Positions the pseudo-element relative to the parent */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(279deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-  z-index: -1; /* Places the pseudo-element behind the content */
+  background: linear-gradient(279deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  z-index: -1;
+  /* Places the pseudo-element behind the content */
 }
 
 h1 {
   margin: 0;
 }
 
-nav {
-  background-color: var(--secondary-background);
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
+    /* Basic styling for the nav */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+      position: relative;
+    }
 
-nav a {
-  color: var(--light-accent);
-  text-decoration: none;
-  padding: 10px;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
+    /* Style for the menu links */
+    #menu {
+      display: flex;
+      gap: 20px; /* Adds spacing between links */
+    }
 
-nav a:hover {
-  color: var(--highlight);
-}
+    #menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 1.2rem; /* Scalable font size */
+      transition: color 0.3s ease;
+    }
 
-/* New styles for the "Sign Up" link */
-nav a[href="/sign-up"] {
-  color: var(--link);
-}
+    #menu a:hover {
+      color: #ff6347; /* Hover effect */
+    }
 
-nav a[href="/sign-up"]:hover {
-  color: var(--highlight);
-}
+    /* Hide the hamburger button by default */
+    #menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Close button for the hamburger menu */
+    #close-menu {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      /* Show the hamburger button */
+      #menu-toggle {
+        display: block;
+      }
+
+      /* Hide the menu by default */
+      #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0; /* Remove gap for vertical layout */
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        padding: 60px 20px 20px; /* Space for the close button */
+        z-index: 1000;
+      }
+
+      /* Show the menu when the button is clicked */
+      #menu.active {
+        display: flex;
+      }
+
+      /* Show the close button when the menu is active */
+      #close-menu.active {
+        display: block;
+      }
+    }
 
 main {
   padding: 20px;
@@ -111,6 +172,7 @@ footer {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
