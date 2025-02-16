@@ -21,13 +21,10 @@ body {
 }
 
 header {
+  position: relative;
   padding: 20px;
   text-align: center;
-}
-
-header {
-  padding: 20px;
-  text-align: center;
+  display: block;
   background:
     radial-gradient(circle farthest-side at 0% 50%, var(--background-color-primary) 23.5%, var(--color-transparent) 0) 21px 30px,
     radial-gradient(circle farthest-side at 0% 50%, var(--background-color-secondary) 24%, var(--color-transparent) 0) 19px 30px,
@@ -37,6 +34,8 @@ header {
     linear-gradient(90deg, var(--background-color-secondary) 2%, var(--background-color-primary) 0, var(--background-color-primary) 98%, var(--background-color-secondary) 0%) 0 0 var(--background-color-primary);
   background-size: 40px 60px;
 }
+
+
 
 h1 {
   margin: 0;
