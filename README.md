@@ -1,6 +1,6 @@
 # SynthGen ✨ synthgen.org
 
-[SynthGen.org](https://synthgen.org) provides specialized service offering AI-generated content badges or watermarks. 
+[SynthGen.org](https://synthgen.org) provides AI-generated content badges or watermarks. 
 
 SynthGen.org aims to authenticate and mark content produced through artificial intelligence, allowing websites and publications to signify the use of AI technology in the creation process. 
 
