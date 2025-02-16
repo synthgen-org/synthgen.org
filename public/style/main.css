@@ -6,6 +6,7 @@ body {
   background: var(--primary-background);
   color: var(--content);
   font-family: "Open Sans", monospace;
+  margin: 0;
 
   & h1 {
     color: var(--highlight);
@@ -66,88 +67,124 @@ h1 {
   margin: 0;
 }
 
-    /* Basic styling for the nav */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #333;
-      padding: 10px;
-      position: relative;
-    }
+.rainbow-effect {
+  background: linear-gradient(
+    to right,
+    violet 0%,
+    indigo 14.28%,
+    blue 28.56%,
+    green 42.84%,
+    yellow 57.12%,
+    orange 71.4%,
+    red 85.68%,
+    violet 100%
+  );
+}
 
-    /* Style for the menu links */
-    #menu {
-      display: flex;
-      gap: 20px; /* Adds spacing between links */
-    }
+/* C64 style for menu nav */
+nav:before {
+  content: "";
+  /* Required for pseudo-elements */
+  position: absolute;
+  /* Positions the pseudo-element relative to the parent */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  z-index: 1;
+  background-color: var(--cyan);
+}
+/* Basic styling for 
+the nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0px -40px 93px 25px rgba(255,255,255,0.8);
+}
 
-    #menu a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      font-size: 1.2rem; /* Scalable font size */
-      transition: color 0.3s ease;
-    }
+/* Style for the menu links */
+#menu {
+  display: flex;
+  gap: 20px;
+  /* Adds spacing between links */
+}
 
-    #menu a:hover {
-      color: #ff6347; /* Hover effect */
-    }
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  /* Scalable font size */
+  transition: color 0.3s ease;
+}
 
-    /* Hide the hamburger button by default */
-    #menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-    }
+#menu a:hover {
+  color: #ff6347;
+  /* Hover effect */
+}
 
-    /* Close button for the hamburger menu */
-    #close-menu {
-      display: none;
-      background: none;
-      border: none;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
+/* Hide the hamburger button by default */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
 
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      /* Show the hamburger button */
-      #menu-toggle {
-        display: block;
-      }
+/* Close button for the hamburger menu */
+#close-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
-      /* Hide the menu by default */
-      #menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        gap: 0; /* Remove gap for vertical layout */
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #333;
-        padding: 60px 20px 20px; /* Space for the close button */
-        z-index: 1000;
-      }
+/* Responsive styles */
+@media (max-width: 768px) {
 
-      /* Show the menu when the button is clicked */
-      #menu.active {
-        display: flex;
-      }
+  /* Show the hamburger button */
+  #menu-toggle {
+    display: block;
+  }
 
-      /* Show the close button when the menu is active */
-      #close-menu.active {
-        display: block;
-      }
-    }
+  /* Hide the menu by default */
+  #menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    /* Remove gap for vertical layout */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 60px 20px 20px;
+    /* Space for the close button */
+    z-index: 1000;
+  }
+
+  /* Show the menu when the button is clicked */
+  #menu.active {
+    display: flex;
+  }
+
+  /* Show the close button when the menu is active */
+  #close-menu.active {
+    display: block;
+    width: 100px;
+  }
+}
 
 main {
   padding: 20px;
