@@ -1,8 +1,16 @@
 @import "colors.css";
 @import "typography.css";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&family=Source+Code+Pro:wght@400;600&display=swap");
+/* Ensure the body and html take up the full height of the viewport */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
   background: var(--primary-background);
   color: var(--content);
   font-family: "Open Sans", monospace;
@@ -195,12 +203,19 @@ nav {
 
 main {
   padding: 20px;
+  flex: 1;
 }
 
 footer {
   background-color: var(--secondary-background);
   padding: 10px;
   text-align: center;
+  color: var(--cyan);
+
+  & p {
+    color: var(--darker;
+    font-size: smaller;
+  }
 }
 
 .loading-spinner {
