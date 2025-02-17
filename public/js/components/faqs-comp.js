@@ -2,9 +2,6 @@ class FAQSComp extends BaseContent  {
     constructor() {
         super();
         this.shadowRoot.innerHTML = `
-            <style>
-                /* Add faqs-comp styles here */
-            </style>
             <section id="faqs">
             <h2>Frequently Asked Questions</h2>
             

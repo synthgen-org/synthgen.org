@@ -2,9 +2,6 @@ class HowItWorksComp extends BaseContent {
     constructor() {
         super();
         this.shadowRoot.innerHTML = `
-            <style>
-                /* Add how-it-works-comp styles here */
-            </style>
             <section id="how-it-works">
                 <h2>How It Works</h2>
                 <p>Implementing AI-generated content markers with SynthGen.org is a straightforward process. Follow these simple steps to add transparency and authenticity to your content:</p>
