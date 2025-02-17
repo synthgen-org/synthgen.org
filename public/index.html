@@ -36,10 +36,99 @@
       <a href="/get-started">Get Started</a>
     </div>
   </nav>
+  <style>
+    #example-content {
+      width: 600px;
+      background-color: #f0f0f0;
+      color: #000000;
+      padding: 1rem;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.25rem;
+      line-height: 1.2em;
+  
+      & .subhead::first-letter {
+        initial-letter: 2;
+      }
+  
+      & .subhead {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: var(--darker);
+      }
+  
+      & h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: var(--darker);
+      }
+  
+      & a {
+        color: blue;
+        text-decoration: none;
+        font-weight: bold;
+      }
+  
+      & .synthgenDemo {
+        font-style: italic;
+      }
+  
+      & .synthgenDemo:after {
+        content: "✨";
+        font-size: smaller;
+        vertical-align: super;
+      }
 
+      & footer {
+        width: 600px;
+        background-color: #f0f0f0;
+        color: #000000;
+        padding: 0px;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 1.2em;
+        font-size: smaller;
+        margin-bottom: 1rem;
+        color: var(--darker);
+      }
+    }
+  </style>
+  <div id="example-content">
+    <section id="before">
+      <h2>Drowning Cities: The Global Race Against Rising Seas</h2>
+      <p class="subhead">As water levels climb, are governments doing enough to protect coastal communities?</p>
+      <p>Coastal cities around the world are facing an urgent threat: <a rel="nofollow" target="_blank"
+          href="https://www.climate.gov/news-features/understanding-climate/climate-change-global-sea-level">rising sea
+          levels</a>. As temperatures climb and polar ice continues to melt, communities from Miami to Jakarta are
+        witnessing increased flooding, eroded shorelines, and infrastructure damage. Scientists warn that without
+        immediate action—ranging from improved flood defenses to reduced carbon emissions—many low-lying regions could
+        become uninhabitable within decades. Governments are grappling with the challenge, but the question remains: Are
+        current efforts enough to prevent a crisis?</p>
+      <p>The impact is already visible. In <a href="https://en.wikipedia.org/wiki/Venice" target="_blank"
+          rel="nofollow">Venice</a>, floodwaters are reaching record highs, threatening centuries-old landmarks. In the
+        Philippines, entire fishing villages are relocating inland as coastlines vanish.</p>
+    </section>
+    <section id="after">
+      <h2>Drowning Cities: The Global Race Against Rising Seas</h2>
+      <p class="subhead">As water levels climb, are governments doing enough to protect coastal communities?</p>
+      <p>Coastal cities around the world are facing an urgent threat: <a rel="nofollow" target="_blank"
+          href="https://www.climate.gov/news-features/understanding-climate/climate-change-global-sea-level">rising sea
+          levels</a>. <span class="synthgenDemo">As temperatures climb and polar ice continues to melt, communities from Miami to Jakarta are
+        witnessing increased flooding, eroded shorelines, and infrastructure damage. Scientists warn that without
+        immediate action—ranging from improved flood defenses to reduced carbon emissions—many low-lying regions could
+        become uninhabitable within decades. Governments are grappling with the challenge, but the question remains: Are
+        current efforts enough to prevent a crisis?</span></p>
+      <p>The impact is already visible. In <a href="https://en.wikipedia.org/wiki/Venice" target="_blank"
+          rel="nofollow">Venice</a>, floodwaters are reaching record highs, threatening centuries-old landmarks. <span class="synthgenDemo">In the
+        Philippines, entire fishing villages are relocating inland as coastlines vanish.</span></p>
+        <footer>*Information italicized with a ✨ notation denotes text that was created wholly or partially by Artificial Intelligence.</footer>
+    </section>
+  </div>
   <main id="content">
     <!-- Content will be dynamically replaced here -->
   </main>
+
 
   <footer>
     <p>&copy; 2025 synthgen.org. All rights reserved. synthgen.org is currently applying for 501(c)(3) non-profit status with the IRS.</p>
