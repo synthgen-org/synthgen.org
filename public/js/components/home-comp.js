@@ -18,7 +18,7 @@ class HomeComp extends BaseContent {
             <li>Easy Implementation for Websites and Publications</li>
             <li>Boost Trust and Credibility</li>
         </ul>
-        <p>Ready to elevate your content with AI? Explore our <a href="/services">services</a> and start marking your AI-generated creations today!</p>
+        <p>Ready to elevate your content with AI? Explore our <a part="link" href="/services">services</a> and start marking your AI-generated creations today!</p>
     </section>
         `;
   }
