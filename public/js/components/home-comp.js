@@ -6,7 +6,7 @@ class HomeComp extends BaseContent {
         <style>
         /* Add home-comp styles here */
     </style>
-    <section id="home">
+    <section part="main-content" id="home">
         <h2>Welcome to SynthGen.org</h2>
         <p>SynthGen.org provides a standardized way to inform readers and users that the content they are engaging with is AI-generated in a world where AI plays an ever-expanding role in content creation. We offer AI-generated content badges and watermarks, allowing you to transparently mark and authenticate the content produced through artificial intelligence.</p>
         <p>Our mission is to bring clarity and transparency to the content landscape, enabling websites and publications to proudly signify the use of AI technology in their creative processes.</p>
@@ -18,7 +18,7 @@ class HomeComp extends BaseContent {
             <li>Easy Implementation for Websites and Publications</li>
             <li>Boost Trust and Credibility</li>
         </ul>
-        <p>Ready to elevate your content with AI? Explore our <a href="/services">services</a> and start marking your AI-generated creations today!</p>
+        <p>Ready to elevate your content with AI? Explore our <a part="link" href="/services">services</a> and start marking your AI-generated creations today!</p>
     </section>
         `;
   }

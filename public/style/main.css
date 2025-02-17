@@ -197,6 +197,10 @@ main {
   padding: 20px;
 }
 
+home-comp::part(link) {
+  color: teal;
+}
+
 footer {
   background-color: var(--secondary-background);
   padding: 10px;
