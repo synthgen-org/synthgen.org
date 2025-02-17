@@ -197,8 +197,13 @@ main {
   padding: 20px;
 }
 
-home-comp::part(link) {
+::part(link) {
   color: teal;
+  text-decoration: none;
+}
+
+::part(link):hover {
+  text-decoration: underline;
 }
 
 footer {
