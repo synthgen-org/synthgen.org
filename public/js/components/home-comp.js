@@ -39,6 +39,19 @@ code {
   min-width: 40%; /* Minimum width for column */
 }
 
+/* Responsive styles */
+@media (max-width: 1000px) {
+
+  .columns {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adjust spacing for better readability */\
+  }
+
+  .column {
+    min-width: 100%; /* Make each column take full width */
+  }
+
+
     </style>
         <div class="columns">
       <!-- Column 1: Before and After Example -->
