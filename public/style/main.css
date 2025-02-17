@@ -138,8 +138,12 @@ nav {
 }
 
 #menu a:hover {
-  color: var(--highlight);
+  color: var(--orange);
   /* Hover effect */
+}
+
+#menu a.active {
+  color: var(--bright);
 }
 
 /* Hide the hamburger button by default */
