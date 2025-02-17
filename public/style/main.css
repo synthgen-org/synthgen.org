@@ -169,42 +169,6 @@ nav {
   right: 10px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-
-  /* Show the hamburger button */
-  #menu-toggle {
-    display: block;
-  }
-
-  /* Hide the menu by default */
-  #menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-    /* Remove gap for vertical layout */
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    padding: 60px 20px 20px;
-    /* Space for the close button */
-    z-index: 1000;
-  }
-
-  /* Show the menu when the button is clicked */
-  #menu.active {
-    display: flex;
-  }
-
-  /* Show the close button when the menu is active */
-  #close-menu.active {
-    display: block;
-    width: 100px;
-  }
-}
-
 main {
   padding: 20px;
   flex: 1;
@@ -269,6 +233,41 @@ footer {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Show the hamburger button */
+  #menu-toggle {
+    display: block;
+  }
+
+  /* Hide the menu by default */
+  #menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    /* Remove gap for vertical layout */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 60px 20px 20px;
+    /* Space for the close button */
+    z-index: 1000;
+  }
+
+  /* Show the menu when the button is clicked */
+  #menu.active {
+    display: flex;
+  }
+
+  /* Show the close button when the menu is active */
+  #close-menu.active {
+    display: block;
+    width: 100px;
   }
 }
 
