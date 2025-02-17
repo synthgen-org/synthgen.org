@@ -78,6 +78,10 @@
         content: "✨";
         font-size: smaller;
         vertical-align: super;
+
+        color: transparent;
+        text-shadow: 0 0 0 var(--darker);
+
       }
 
       & footer {
@@ -91,6 +95,12 @@
         font-size: smaller;
         margin-bottom: 1rem;
         color: var(--darker);
+
+        & .synthgen {
+          font-size: smaller;
+          color: transparent;
+          text-shadow: 0 0 0 var(--darker);
+        }
       }
     }
   </style>
@@ -122,7 +132,7 @@
       <p>The impact is already visible. In <a href="https://en.wikipedia.org/wiki/Venice" target="_blank"
           rel="nofollow">Venice</a>, floodwaters are reaching record highs, threatening centuries-old landmarks. <span class="synthgenDemo">In the
         Philippines, entire fishing villages are relocating inland as coastlines vanish.</span></p>
-        <footer>*Information italicized with a ✨ notation denotes text that was created wholly or partially by Artificial Intelligence.</footer>
+        <footer>*Information italicized with a <span class="synthgen">✨</span> notation denotes text that was created wholly or partially by Artificial Intelligence.</footer>
     </section>
   </div>
   <main id="content">
