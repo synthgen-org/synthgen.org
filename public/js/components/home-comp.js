@@ -42,6 +42,14 @@ code {
   min-width: 40%; /* Minimum width for column */
 }
 
+.column img {
+  width: 100%;  /* Make image take full column width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the space */
+  object-position: center; /* Locks perspective to the middle */
+  display: block; /* Prevents unwanted spacing */
+}
+
 /* Responsive styles */
 @media (max-width: 1000px) {
 
@@ -79,6 +87,9 @@ code {
 </div><!-- end column 1 -->
       <!-- Column 2: Explanation and Call to Action -->
       <div class="column">
+      <section class="image">
+        <img src="/img/chip.webp" alt="Boosting Trust and Credibility" />
+      </section>
 <section class="how-it-works">
     <h2>How It Works</h2>
   <p>With synthgen.org, marking AI-generated content is simple and seamless. Here’s how you can get started:</p>
