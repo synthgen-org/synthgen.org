@@ -53,14 +53,52 @@ function fetchContent(path) {
     } else if (path === "/thank-you") {
       content = "<thank-you-comp></thank-you-comp>";
     }
+
     // Update the content div
-    document.getElementById("content").innerHTML = content;
+    contentContainer.innerHTML = content;
+
+    // Set the active menu item
+    setActiveMenuItem(path);
+
   } catch (error) {
     console.error("Error fetching content:", error);
     // Handle errors and show an error component
     contentContainer.innerHTML = "<error-comp></error-comp>";
   }
 }
+
+// Function to set the active menu item
+function setActiveMenuItem(path) {
+  // Remove the 'active' class from all menu items
+  document.querySelectorAll("nav a").forEach((link) => {
+    link.classList.remove("active");
+  });
+
+  // Find the menu item that matches the current path and add the 'active' class
+  const activeLink = document.querySelector(`nav a[href="${path}"]`);
+  if (activeLink) {
+    activeLink.classList.add("active");
+  }
+}
+
+// Call fetchContent with the current path when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPath = window.location.pathname; // Get the current URL path
+  fetchContent(currentPath);
+});
+
+// Prevent default navigation and use our custom function
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Get the path from the clicked link
+    const path = link.getAttribute("href");
+
+    // Fetch and update the content
+    fetchContent(path);
+  });
+});
 
 // Function to handle back and forward navigation
 window.onpopstate = function (event) {
@@ -73,40 +111,47 @@ window.onpopstate = function (event) {
 document.querySelectorAll("nav a").forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
+    // Remove the 'active' class from all menu items
+    document.querySelectorAll("nav a").forEach((otherLink) => {
+      otherLink.classList.remove("active");
+    });
+
+    // Add the 'active' class to the clicked menu item
+    link.classList.add("active");
     navigate(link.getAttribute("href"));
   });
 });
 
 //menu navigation
-const menuToggle = document.getElementById('menu-toggle');
-const closeMenu = document.getElementById('close-menu');
-const menu = document.getElementById('menu');
+const menuToggle = document.getElementById("menu-toggle");
+const closeMenu = document.getElementById("close-menu");
+const menu = document.getElementById("menu");
 
 // Toggle menu visibility
-menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  closeMenu.classList.toggle('active');
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  closeMenu.classList.toggle("active");
 });
 
 // Close menu when close button is clicked
-closeMenu.addEventListener('click', () => {
-  menu.classList.remove('active');
-  closeMenu.classList.remove('active');
+closeMenu.addEventListener("click", () => {
+  menu.classList.remove("active");
+  closeMenu.classList.remove("active");
 });
 
 // Close menu when clicking outside of it
-document.addEventListener('click', (event) => {
+document.addEventListener("click", (event) => {
   if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-    menu.classList.remove('active');
-    closeMenu.classList.remove('active');
+    menu.classList.remove("active");
+    closeMenu.classList.remove("active");
   }
 });
 
 // Close menu when a menu item is clicked
-const menuLinks = document.querySelectorAll('#menu a');
-menuLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('active');
-    closeMenu.classList.remove('active');
+const menuLinks = document.querySelectorAll("#menu a");
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("active");
+    closeMenu.classList.remove("active");
   });
 });
