@@ -34,7 +34,7 @@ class HowItWorksComp extends BaseContent {
                     <p>Ensure the proper implementation of your AI-generated content marker. Use our verification tools and authentication API to confirm that the markers are functioning as intended, providing a seamless experience for your audience.</p>
                 </article>
 
-                <p>By following these steps, you can confidently mark your AI-generated content and showcase the innovative use of technology in your creative process. Ready to get started? Explore our <a href="/services">services</a> and begin marking your creations today!</p>
+                <p>By following these steps, you can confidently mark your AI-generated content and showcase the innovative use of technology in your creative process. Ready to get started? Explore our <a part="link"  href="/services">services</a> and begin marking your creations today!</p>
             </section>
         `;
     }

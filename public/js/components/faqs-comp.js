@@ -38,7 +38,7 @@ class FAQSComp extends BaseContent  {
                 <p>A: We offer a variety of markers, including badges and watermarks. You can choose the type that best fits your content and branding strategy, adding a unique touch to your AI-generated creations.</p>
             </article>
 
-            <p>Have more questions? Feel free to <a href="/contact">contact us</a>, and we'll be happy to assist you!</p>
+            <p>Have more questions? Feel free to <a part="link" href="/contact">contact us</a>, and we'll be happy to assist you!</p>
         </section>
         `;
     }
