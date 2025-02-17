@@ -39,7 +39,7 @@ class GetStartedComp extends BaseContent {
                     <p>Ensure the proper implementation of your AI-generated content marker. Use our verification tools and authentication API to confirm that the markers are functioning as intended, providing a seamless experience for your audience.</p>
                 </article>
 
-                <p>Ready to elevate your content with AI-generated markers? <a href="/signup">Sign up</a> now and start marking your creations today!</p>
+                <p>Ready to elevate your content with AI-generated markers? <a part="link"  href="/signup">Sign up</a> now and start marking your creations today!</p>
             </section>
         `;
     }
