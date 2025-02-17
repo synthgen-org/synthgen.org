@@ -30,11 +30,13 @@ code {
 
 .columns {
   display: flex;
+  flex-wrap: wrap; /* Wrap items to new line */
   gap: 40px; /* Space between columns */
 }
 
 .column {
   flex: 1; /* Equal width for both columns */
+  min-width: 40%; /* Minimum width for column */
 }
 
     </style>
