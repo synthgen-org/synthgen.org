@@ -42,7 +42,7 @@ class PrivacyPolicyComp extends BaseContent {
                     <p>We may update this Privacy Policy from time to time. Any changes will be effective immediately upon posting. It is your responsibility to review the Privacy Policy periodically.</p>
                 </article>
 
-                <p>If you have any questions or concerns regarding our Privacy Policy, please <a href="/contact">contact us</a>.</p>
+                <p>If you have any questions or concerns regarding our Privacy Policy, please <a part="link"  href="/contact">contact us</a>.</p>
             </section>
         `;
     }

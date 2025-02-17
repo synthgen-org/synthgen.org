@@ -47,8 +47,8 @@ class ContactComp extends BaseContent  {
 
             <article>
                 <h3>Email</h3>
-                <p>For general inquiries: <a href="mailto:info@synthgen.org">info@synthgen.org</a></p>
-                <p>For support: <a href="mailto:support@synthgen.org">support@synthgen.org</a></p>
+                <p>For general inquiries: <a part="link"  href="mailto:info@synthgen.org">info@synthgen.org</a></p>
+                <p>For support: <a part="link" href="mailto:support@synthgen.org">support@synthgen.org</a></p>
             </article>
 
             <article>
