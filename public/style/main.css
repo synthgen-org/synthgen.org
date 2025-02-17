@@ -248,7 +248,7 @@ footer {
   color: var(--cyan);
 
   & p {
-    color: var(--darker);
+    color: var(--light);
     font-size: smaller;
   }
 }
