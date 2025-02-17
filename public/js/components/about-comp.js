@@ -2,9 +2,6 @@ class AboutComp extends BaseContent  {
     constructor() {
         super();
         this.shadowRoot.innerHTML = `
-            <style>
-                /* Add home-comp styles here */
-            </style>
             <section id="about">
                 <h2>About SynthGen.org</h2>
                 <p>SynthGen.org is a pioneering platform in the realm of AI-generated content, dedicated to revolutionizing how individuals and organizations communicate the origin of their content in an AI-driven era.</p>

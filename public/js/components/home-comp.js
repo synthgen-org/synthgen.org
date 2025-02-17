@@ -2,11 +2,6 @@ class HomeComp extends BaseContent {
   constructor() {
     super();
     this.shadowRoot.innerHTML = `
-
-        <style>
-        /* Add home-comp styles here */
-    </style>
-    <div part="my-part">Stylable content</div>
     <section part="page-content" id="home">
         <h2>Welcome to SynthGen.org</h2>
         <p>SynthGen.org provides a standardized way to inform readers and users that the content they are engaging with is AI-generated in a world where AI plays an ever-expanding role in content creation. We offer AI-generated content badges and watermarks, allowing you to transparently mark and authenticate the content produced through artificial intelligence.</p>

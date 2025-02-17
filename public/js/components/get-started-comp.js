@@ -2,9 +2,6 @@ class GetStartedComp extends BaseContent {
     constructor() {
         super();
         this.shadowRoot.innerHTML = `
-            <style>
-                /* Add get-started-comp styles here */
-            </style>
             <section id="get-started">
                 <h2>Get Started</h2>
                 <p>Ready to mark and authenticate your AI-generated content? Follow these simple steps to get started with SynthGen.org:</p>

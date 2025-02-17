@@ -2,9 +2,6 @@ class ServicesComp extends BaseContent {
   constructor() {
     super();
     this.shadowRoot.innerHTML = `
-            <style>
-                /* Add services-comp styles here */
-            </style>
             <section id="services">
             <h2>Our Services</h2>
             <p>At SynthGen.org, we offer a range of services designed to help you transparently mark and authenticate AI-generated content. Explore our offerings below:</p>

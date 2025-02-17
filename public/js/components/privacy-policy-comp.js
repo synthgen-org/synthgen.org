@@ -2,9 +2,6 @@ class PrivacyPolicyComp extends BaseContent {
     constructor() {
         super();
         this.shadowRoot.innerHTML = `
-            <style>
-                /* Add privacy-policy-comp styles here */
-            </style>
             <section id="privacy-policy">
                 <h2>Privacy Policy</h2>
 
