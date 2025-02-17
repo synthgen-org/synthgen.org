@@ -7,7 +7,7 @@
     --alert: var(--orange);
     --error: var(--red);
     --success: var(--green);
-    --link: var(--blue);
+    --link: var(--teal);
 
     --darker: rgba(26, 26, 26, 1); /*  #1a1a1a This is a deep, almost black color that serves as the primary background for your dark mode website.*/
     --light: rgba(239, 239, 239, 1); /* #efefef White or off-white text provides high contrast against the dark background, ensuring readability. */
