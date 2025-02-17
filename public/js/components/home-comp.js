@@ -3,6 +3,9 @@ class HomeComp extends BaseContent {
     super();
     this.shadowRoot.innerHTML = `
     <style>
+    h1 {
+        font-size: x-large;
+    }
     h2.tagline {
         color: rgba(255, 204, 0, 1);
     }
