@@ -129,7 +129,7 @@ nav {
 }
 
 #menu a {
-  color: white;
+  color: var(--light);
   text-decoration: none;
   padding: 10px;
   font-size: 1.2rem;
@@ -208,6 +208,28 @@ nav {
 main {
   padding: 20px;
   flex: 1;
+
+  & a {
+    color: var(--link);
+  }
+  & a:link{color:inherit}
+  & a:active{color:inherit}
+  & a:visited{color:inherit}
+  & a:hover{color:inherit}
+
+}
+
+/* part madness */
+section:part(page-content) {
+  color: red;
+}
+
+div::part(my-part) {
+  color: red;
+}
+
+a {
+  color: var(--link);
 }
 
 ::part(link) {
@@ -226,7 +248,7 @@ footer {
   color: var(--cyan);
 
   & p {
-    color: var(--darker;
+    color: var(--darker);
     font-size: smaller;
   }
 }
@@ -249,3 +271,4 @@ footer {
     transform: rotate(360deg);
   }
 }
+
