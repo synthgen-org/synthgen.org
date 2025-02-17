@@ -180,7 +180,7 @@ code {
         width: auto;
         height: auto;
         left: 0;
-        top: -30px;
+        top: -25px;
         font-family: 'Arial', sans-serif;
         background-color: rgba(0, 0, 0, .4);
         color:#ffffff;
@@ -193,7 +193,7 @@ code {
         width: auto;
         height: auto;
         right: 0;
-        top: 10px;
+        bottom: 10px;
         font-family: 'Arial', sans-serif;
         background-color: rgba(0, 0, 0, .4);
         color:#ffffff;
