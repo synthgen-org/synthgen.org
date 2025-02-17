@@ -201,7 +201,7 @@ code {
       }
     }
   </style>
-<div id="example-content">
+<div id="example-content" data-nosnippet>
     <section id="before">
       <p class="subhead">As water levels climb, are governments doing enough to protect coastal communities?</p>
       <p>Coastal cities around the world are facing an urgent threat: <a rel="nofollow" target="_blank"
