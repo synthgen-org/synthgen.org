@@ -2,45 +2,79 @@ class PrivacyPolicyComp extends BaseContent {
     constructor() {
         super();
         this.shadowRoot.innerHTML = `
-            <section id="privacy-policy">
-                <h2>Privacy Policy</h2>
+<style>
+    h1 {
+        font-size: x-large;
+    }
+    h2.tagline {
+        color: rgba(255, 204, 0, 1);
+    }
 
-                <article>
-                    <p>Your privacy is important to us. This Privacy Policy outlines the types of personal information we collect when you use SynthGen.org, how we use it, and the steps we take to protect it.</p>
-                </article>
+    pre {
+  background-color: rgba(112, 112, 112, 1);
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow-x: auto; /* Adds horizontal scroll for long lines */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
 
-                <article>
-                    <h3>1. Information We Collect</h3>
-                    <p>We may collect personal information, such as names, email addresses, and user preferences, when voluntarily submitted by our users. We also collect non-personal information, such as browser type and IP address, for analytical purposes.</p>
-                </article>
+code {
+  background-color: rgba(112, 112, 112, 1);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: rgba(105, 226, 240, 1);
+}
 
-                <article>
-                    <h3>2. How We Use Your Information</h3>
-                    <p>We use the information collected to provide and improve our services, personalize user experience, and communicate with users. We may also use aggregated, non-personal information for statistical analysis.</p>
-                </article>
+.columns {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to new line */
+  gap: 40px; /* Space between columns */
+}
 
-                <article>
-                    <h3>3. Information Sharing</h3>
-                    <p>We do not sell, trade, or otherwise transfer your personal information to outside parties. This does not include trusted third parties who assist us in operating our website or servicing you, as long as those parties agree to keep this information confidential.</p>
-                </article>
+.column {
+  flex: 1; /* Equal width for both columns */
+  min-width: 40%; /* Minimum width for column */
+}
 
-                <article>
-                    <h3>4. Security Measures</h3>
-                    <p>We implement a variety of security measures to maintain the safety of your personal information. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
-                </article>
+.column img {
+  width: 100%;  /* Make image take full column width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the space */
+  object-position: center; /* Locks perspective to the middle */
+  display: block; /* Prevents unwanted spacing */
+  border-bottom: solid 1px rgba(255, 204, 0, 1);
+}
 
-                <article>
-                    <h3>5. Cookies</h3>
-                    <p>We use cookies to enhance your experience on our site. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your web browser, enabling the site's systems to recognize your browser and capture and remember certain information.</p>
-                </article>
+/* Responsive styles */
+@media (max-width: 1000px) {
 
-                <article>
-                    <h3>6. Changes to Privacy Policy</h3>
-                    <p>We may update this Privacy Policy from time to time. Any changes will be effective immediately upon posting. It is your responsibility to review the Privacy Policy periodically.</p>
-                </article>
+  .columns {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adjust spacing for better readability */\
+  }
 
-                <p>If you have any questions or concerns regarding our Privacy Policy, please <a part="link"  href="/contact">contact us</a>.</p>
-            </section>
+  .column {
+    min-width: 100%; /* Make each column take full width */
+  }
+
+
+    </style>
+        <div class="columns">
+      <div class="column">
+        <!-- Column 1 content -->
+</div><!-- end column 1 -->
+      <!-- Column 2: Explanation and Call to Action -->
+      <div class="column">
+      <section class="image">
+        <img src="/img/robot.webp" alt="Boosting Trust and Credibility" />
+      </section>
+      </div><!-- end column 2 -->
         `;
     }
 }

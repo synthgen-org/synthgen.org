@@ -2,49 +2,79 @@ class TermsOfServiceComp extends BaseContent {
     constructor() {
         super();
         this.shadowRoot.innerHTML = `
-            <style>
-                /* Add terms-of-services-comp styles here */
-            </style>
-            <section id="terms">
-                <h2>Terms of Service</h2>
-                
-                <article>
-                    <h3>1. Acceptance of Terms</h3>
-                    <p>By accessing or using SynthGen.org, you agree to comply with and be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
-                </article>
+<style>
+    h1 {
+        font-size: x-large;
+    }
+    h2.tagline {
+        color: rgba(255, 204, 0, 1);
+    }
 
-                <article>
-                    <h3>2. Description of Services</h3>
-                    <p>SynthGen.org provides a platform for the implementation of AI-generated content markers. We reserve the right to modify or discontinue any aspect of our services at any time without notice.</p>
-                </article>
+    pre {
+  background-color: rgba(112, 112, 112, 1);
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow-x: auto; /* Adds horizontal scroll for long lines */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
 
-                <article>
-                    <h3>3. User Responsibilities</h3>
-                    <p>Users are responsible for maintaining the confidentiality of their account information, including passwords. You are also responsible for all activities that occur under your account.</p>
-                </article>
+code {
+  background-color: rgba(112, 112, 112, 1);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: rgba(105, 226, 240, 1);
+}
 
-                <article>
-                    <h3>4. Intellectual Property</h3>
-                    <p>All content and materials available on SynthGen.org, including but not limited to text, graphics, logos, icons, and images, are the property of SynthGen.org or its licensors.</p>
-                </article>
+.columns {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to new line */
+  gap: 40px; /* Space between columns */
+}
 
-                <article>
-                    <h3>5. Privacy Policy</h3>
-                    <p>Your use of SynthGen.org is also governed by our Privacy Policy, which can be found at <a href="/privacy-policy">here</a>.</p>
-                </article>
+.column {
+  flex: 1; /* Equal width for both columns */
+  min-width: 40%; /* Minimum width for column */
+}
 
-                <article>
-                    <h3>6. Termination</h3>
-                    <p>We reserve the right to terminate or suspend your account and access to our services for any reason, without prior notice.</p>
-                </article>
+.column img {
+  width: 100%;  /* Make image take full column width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the space */
+  object-position: center; /* Locks perspective to the middle */
+  display: block; /* Prevents unwanted spacing */
+  border-bottom: solid 1px rgba(255, 204, 0, 1);
+}
 
-                <article>
-                    <h3>7. Changes to Terms of Service</h3>
-                    <p>We may update these Terms of Service from time to time. Any changes will be effective immediately upon posting. It is your responsibility to review the Terms of Service periodically.</p>
-                </article>
+/* Responsive styles */
+@media (max-width: 1000px) {
 
-                <p>If you have any questions or concerns regarding our Terms of Service, please <a href="/contact">contact us</a>.</p>
-            </section>
+  .columns {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adjust spacing for better readability */\
+  }
+
+  .column {
+    min-width: 100%; /* Make each column take full width */
+  }
+
+
+    </style>
+        <div class="columns">
+      <div class="column">
+        <!-- Column 1 content -->
+</div><!-- end column 1 -->
+      <!-- Column 2: Explanation and Call to Action -->
+      <div class="column">
+      <section class="image">
+        <img src="/img/robot.webp" alt="Boosting Trust and Credibility" />
+      </section>
+      </div><!-- end column 2 -->
         `;
     }
 }

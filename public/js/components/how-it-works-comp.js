@@ -2,37 +2,79 @@ class HowItWorksComp extends BaseContent {
     constructor() {
         super();
         this.shadowRoot.innerHTML = `
-            <section id="how-it-works">
-                <h2>How It Works</h2>
-                <p>Implementing AI-generated content markers with SynthGen.org is a straightforward process. Follow these simple steps to add transparency and authenticity to your content:</p>
-                
-                <article>
-                    <h3>1. Sign Up or Log In</h3>
-                    <p>Get started by creating an account on SynthGen.org or log in if you already have one. This account will be your gateway to accessing and managing AI-generated content markers.</p>
-                </article>
+<style>
+    h1 {
+        font-size: x-large;
+    }
+    h2.tagline {
+        color: rgba(255, 204, 0, 1);
+    }
 
-                <article>
-                    <h3>2. Choose Your Marker Type</h3>
-                    <p>Select the type of AI-generated content marker that best suits your needs. Whether it's a badge, watermark, or a combination of both, choose the marker type that aligns with your content and branding strategy.</p>
-                </article>
+    pre {
+  background-color: rgba(112, 112, 112, 1);
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow-x: auto; /* Adds horizontal scroll for long lines */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
 
-                <article>
-                    <h3>3. Customize Your Marker</h3>
-                    <p>Personalize the appearance of your AI-generated content marker. Explore customization options such as color schemes, sizes, and branding integration to make the marker uniquely yours.</p>
-                </article>
+code {
+  background-color: rgba(112, 112, 112, 1);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: rgba(105, 226, 240, 1);
+}
 
-                <article>
-                    <h3>4. Implement the Marker</h3>
-                    <p>Integrate the chosen marker into your content creation process. Depending on your platform, this could involve adding a simple code snippet, applying settings through our API, or utilizing our user-friendly plugins for popular content management systems.</p>
-                </article>
+.columns {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to new line */
+  gap: 40px; /* Space between columns */
+}
 
-                <article>
-                    <h3>5. Verify and Authenticate</h3>
-                    <p>Ensure the proper implementation of your AI-generated content marker. Use our verification tools and authentication API to confirm that the markers are functioning as intended, providing a seamless experience for your audience.</p>
-                </article>
+.column {
+  flex: 1; /* Equal width for both columns */
+  min-width: 40%; /* Minimum width for column */
+}
 
-                <p>By following these steps, you can confidently mark your AI-generated content and showcase the innovative use of technology in your creative process. Ready to get started? Explore our <a part="link"  href="/services">services</a> and begin marking your creations today!</p>
-            </section>
+.column img {
+  width: 100%;  /* Make image take full column width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the space */
+  object-position: center; /* Locks perspective to the middle */
+  display: block; /* Prevents unwanted spacing */
+  border-bottom: solid 1px rgba(255, 204, 0, 1);
+}
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+
+  .columns {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adjust spacing for better readability */\
+  }
+
+  .column {
+    min-width: 100%; /* Make each column take full width */
+  }
+
+
+    </style>
+        <div class="columns">
+      <div class="column">
+        <!-- Column 1 content -->
+</div><!-- end column 1 -->
+      <!-- Column 2: Explanation and Call to Action -->
+      <div class="column">
+      <section class="image">
+        <img src="/img/robot.webp" alt="Boosting Trust and Credibility" />
+      </section>
+      </div><!-- end column 2 -->
         `;
     }
 }
