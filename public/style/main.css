@@ -23,6 +23,13 @@ body {
     -webkit-text-stroke-color: var(--darker);
   }
 
+  & h1 a {
+    color: var(--highlight);
+    text-shadow: 2px 2px 2px var(--cyan);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--darker);
+  }
+
   & h2 {
     color: var(--light-accent);
   }
