@@ -146,7 +146,7 @@ code {
               <!-- Column 2: Explanation and Call to Action -->
       <div class="column">
       <section class="image">
-        <img src="/img/wind-up-robot.webp" alt="Boosting Trust and Credibility" />
+        <img src="/img/connect-node.webp" alt="Boosting Trust and Credibility" />
       </section>
       </div><!-- end column 2 -->
         `;
