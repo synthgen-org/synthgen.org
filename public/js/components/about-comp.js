@@ -69,7 +69,7 @@ code {
       <div class="column">
 <section class="welcome">
     <h1>About synthgen.org</h1>
-    <h2 class="tagline">Empowering Transparency in the AI Era – Authenticate, Mark, and Trust AI-Generated Content.</h2>
+    <h2 class="tagline">Authenticate, Mark, and Trust AI-Generated Content.</h2>
       <p>In an era where artificial intelligence is transforming how content is created, <strong>synthgen.org</strong> stands at the forefront of promoting transparency and trust. Our platform provides a standardized, easy-to-implement solution for marking and authenticating AI-generated content, ensuring that readers and users can engage with confidence.</p>
 
   <h3>Our Mission</h3>
