@@ -116,14 +116,14 @@ code {
 
             <article>
                 <h3>Phone</h3>
-                <p>Call us at: +1 (555) 123-4567</p>
+                <p>Call us at: +1 (414) 208-4283</p>
             </article>
-
+<!--
             <article>
                 <h3>Address</h3>
                 <p>Visit us at: 123 SynthGen Street, Tech City, AI 56789</p>
             </article>
-
+-->
             <article>
                 <h3>Contact Form</h3>
                 <form action="/submit-contact" method="post">

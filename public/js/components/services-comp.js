@@ -171,11 +171,13 @@ code {
       <section class="image">
         <img src="/img/arm.webp" alt="Boosting Trust and Credibility" />
       </section>
+      <!--
         <section class="get-started">
     <h2>Get Started Today</h2>
     <p>Ready to bring transparency to your content? Explore our services and discover how you can implement credible markers for AI-generated content.</p>
     <a href="/sign-up" part="link" class="button">Sign Up Now</a>
   </section>
+  -->
 
   <section class="faq-cta">
     <h2>Have Questions?</h2>
