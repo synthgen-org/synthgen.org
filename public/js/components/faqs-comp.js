@@ -107,7 +107,7 @@ code {
     <div class="question">
       <h3>How do I integrate synthgen.org into my website?</h3>
       <p>Add our lightweight JavaScript embed to your website by including the following code:</p>
-      <pre><code>&lt;script src="https://synthgen.org/path-to-embed.js"&gt;&lt;/script&gt;</code></pre>
+      <pre><code>&lt;script src="https://cdn.jsdelivr.net/gh/synthgen-org/synthgen-embed@1.0.0/embed.js"&gt;&lt;/script&gt;</code></pre>
       <p>Once embedded, our script will automatically process your <code>[ai]</code> tags and add a footer disclaimer.</p>
     </div>
 

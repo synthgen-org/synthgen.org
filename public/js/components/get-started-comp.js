@@ -90,7 +90,7 @@ code {
       <h3>Step 2: Embed Our JavaScript</h3>
       <p>Add our lightweight JavaScript embed to your website. This script will automatically process your <code>[ai]</code> tags and add visual indicators to your AI-generated content.</p>
       <p>Include the following code in your website’s HTML:</p>
-      <pre><code>&lt;script src="https://synthgen.org/path-to-embed.js"&gt;&lt;/script&gt;</code></pre>
+      <pre><code>&lt;script src="https://cdn.jsdelivr.net/gh/synthgen-org/synthgen-embed@1.0.0/embed.js"&gt;&lt;/script&gt;</code></pre>
       <p>Once embedded, our script will:</p>
       <ul>
         <li>Replace <code>[ai]</code> tags with styled HTML.</li>

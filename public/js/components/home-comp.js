@@ -249,7 +249,7 @@ code {
 
   <h3>2. Embed Our JavaScript</h3>
   <p>Include our lightweight JavaScript embed in your website:</p>
-  <pre><code>&lt;script src="https://synthgen.org/path-to-embed.js"&gt;&lt;/script&gt;</code></pre>
+  <pre><code>&lt;script src="https://cdn.jsdelivr.net/gh/synthgen-org/synthgen-embed@1.0.0/embed.js"&gt;&lt;/script&gt;</code></pre>
 
   <h3>3. Watch It Transform</h3>
   <p>Our script will automatically:</p>

@@ -96,7 +96,7 @@ code {
     <div class="step">
       <h3>Step 2: Embed Our JavaScript</h3>
       <p>Add our lightweight JavaScript embed to your website. This script will automatically transform your <code>[ai]</code> tags into beautifully styled, authenticated content.</p>
-      <pre><code>&lt;script src="https://synthgen.org/path-to-embed.js"&gt;&lt;/script&gt;</code></pre>
+      <pre><code>&lt;script src="https://cdn.jsdelivr.net/gh/synthgen-org/synthgen-embed@1.0.0/embed.js"&gt;&lt;/script&gt;</code></pre>
       <p><strong>What Happens Next:</strong></p>
       <ul>
         <li>Our script scans your content for <code>[ai]</code> tags.</li>
