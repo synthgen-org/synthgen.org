@@ -68,6 +68,63 @@ code {
         <div class="columns">
       <div class="column">
         <!-- Column 1 content -->
+        <div class="getting-started">
+  <h1>Getting Started</h1>
+
+  <section class="intro">
+    <p>Welcome to <strong>synthgen.org</strong>! We’re excited to help you bring transparency to your AI-generated content. Follow these simple steps to get started with our tools—no account required!</p>
+  </section>
+
+  <section class="step-by-step">
+    <h2>Step-by-Step Guide</h2>
+
+    <div class="step">
+      <h3>Step 1: Wrap AI-Generated Content in Tags</h3>
+      <p>Identify the AI-generated text in your content and wrap it in our simple <code>[ai]</code> tags. This tells our system which parts of your content were created with AI.</p>
+      <p><strong>Example:</strong></p>
+      <pre><code>&lt;p&gt;This is human-written text. [ai]This is AI-generated text.[/ai]&lt;/p&gt;</code></pre>
+      <p>Our tools will automatically transform these tags into styled, authenticated content.</p>
+    </div>
+
+    <div class="step">
+      <h3>Step 2: Embed Our JavaScript</h3>
+      <p>Add our lightweight JavaScript embed to your website. This script will automatically process your <code>[ai]</code> tags and add visual indicators to your AI-generated content.</p>
+      <p>Include the following code in your website’s HTML:</p>
+      <pre><code>&lt;script src="https://synthgen.org/path-to-embed.js"&gt;&lt;/script&gt;</code></pre>
+      <p>Once embedded, our script will:</p>
+      <ul>
+        <li>Replace <code>[ai]</code> tags with styled HTML.</li>
+        <li>Add a professional footer disclaimer to your website.</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <h3>Step 3: Review and Publish</h3>
+      <p>After embedding the script, review your content to ensure everything looks great. Once you’re satisfied, publish your content and let your audience know you’re committed to transparency!</p>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <h2>Why Use synthgen.org?</h2>
+    <p>By marking your AI-generated content with synthgen.org, you’re:</p>
+    <ul>
+      <li><strong>Building Trust</strong>: Show your audience that you value transparency and honesty.</li>
+      <li><strong>Embracing Innovation</strong>: Proudly showcase your use of cutting-edge AI technology.</li>
+      <li><strong>Simplifying Compliance</strong>: Meet ethical and legal standards for AI-generated content.</li>
+    </ul>
+  </section>
+
+  <section class="faq-cta">
+    <h2>Have Questions?</h2>
+    <p>Check out our <a href="/faqs" part="link" >FAQs</a> or <a href="/contact" part="link" >contact us</a> for assistance. We’re here to help!</p>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Get Started?</h2>
+    <p>Join the movement for transparent AI content. Start marking your AI-generated content today—no account required!</p>
+    <a href="/try-now" class="button" part="link" >Try It Now</a>
+  </section>
+</div>
 </div><!-- end column 1 -->
       <!-- Column 2: Explanation and Call to Action -->
       <div class="column">
