@@ -269,11 +269,13 @@ code {
 <p>Ready to bring transparency to your content? Explore our services and discover how you can implement credible markers for AI-generated content.</p>
 <a href="/services" part="link" class="button">Explore Our Services</a>
 </section>
+<!--
 <section class="cta">
     <h2>Ready to Mark Your AI-Generated Content?</h2>
 <p>Sign up for a synthgen.org account today and start marking your AI-generated content with clarity and confidence!</p>
 <a part="link" href="/sign-up" class="button">Sign Up Now</a>
 </section>
+-->
 <section class="faq">
     <h2>Frequently Asked Questions</h2>
 <p>Have questions about synthgen.org? Check out our <a href="/faqs" part="link" class="button">FAQs</a></p>

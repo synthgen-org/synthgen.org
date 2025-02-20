@@ -136,12 +136,13 @@ code {
       <li><strong>Customization</strong>: Tailor the appearance of AI markers to match your brand.</li>
     </ul>
   </section>
-
+<!--
   <section class="get-started">
     <h2>Ready to Get Started?</h2>
     <p>Join the movement for transparent AI content. Sign up for a synthgen.org account today and start marking your AI-generated content with clarity and confidence.</p>
     <a href="/sign-up" class="button" part="link">Sign Up Now</a>
   </section>
+  -->
 
   <section class="faq-cta">
     <h2>Have Questions?</h2>
