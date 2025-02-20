@@ -73,7 +73,7 @@ code {
   <h1>How It Works</h1>
 
   <section class="intro">
-    <h2>Bring Transparency to Your Content in Three Simple Steps</h2>
+    <h2 class="tagline">Bring Transparency to Your Content in Three Simple Steps</h2>
     <p>At <strong>synthgen.org</strong>, we’ve designed our tools to be intuitive, easy to use, and seamlessly integrated into your workflow. Here’s how you can start marking and authenticating AI-generated content today.</p>
   </section>
 

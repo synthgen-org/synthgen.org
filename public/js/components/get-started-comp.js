@@ -76,7 +76,7 @@ code {
   </section>
 
   <section class="step-by-step">
-    <h2>Step-by-Step Guide</h2>
+    <h2 class="tagline">Step-by-Step Guide</h2>
 
     <div class="step">
       <h3>Step 1: Wrap AI-Generated Content in Tags</h3>
@@ -119,11 +119,6 @@ code {
     <p>Check out our <a href="/faqs" part="link" >FAQs</a> or <a href="/contact" part="link" >contact us</a> for assistance. We’re here to help!</p>
   </section>
 
-  <section class="cta">
-    <h2>Ready to Get Started?</h2>
-    <p>Join the movement for transparent AI content. Start marking your AI-generated content today—no account required!</p>
-    <a href="/try-now" class="button" part="link" >Try It Now</a>
-  </section>
 </div>
 </div><!-- end column 1 -->
       <!-- Column 2: Explanation and Call to Action -->
