@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 
 const app = express();
 
@@ -15,6 +16,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve your static files (HTML, CSS, etc.)
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Configure Nodemailer transporter
+const transporter = nodemailer.createTransport({
+    service: 'gmail', // Use 'smtp.mailgun.org' or another provider if needed
+    auth: {
+        user: process.env.EMAIL_USER, // Your email address
+        pass: process.env.EMAIL_PASS  // Your email password or app-specific password
+    }
+});
+
 // Endpoint to handle form submissions
 app.post('/submit-contact', (req, res) => {
     try {
@@ -23,8 +33,20 @@ app.post('/submit-contact', (req, res) => {
         const { name, email, message } = req.body;
         console.log('Form Data:', { name, email, message });
 
-        // Render the thank-you component
-        const thankYouContent = fs.readFileSync(path.join(__dirname, 'public', 'thank-you.html'), 'utf8');
+        // Define the email options
+        const mailOptions = {
+            from: process.env.EMAIL_USER, // Sender email
+            to: 'cbronson@gmail.com', // Replace with your email
+            subject: `New Contact Form Submission from ${name}`,
+            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+        };
+
+        // Send the email
+        await transporter.sendMail(mailOptions);
+        console.log('Email sent successfully');
+
+        // Serve the thank-you page
+        const thankYouContent = fs.readFileSync(path.join(__dirname, 'public', '/thank-you'), 'utf8');
         res.send(thankYouContent);
     } catch (error) {
         console.error('Error processing form:', error);
