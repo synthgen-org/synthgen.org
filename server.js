@@ -16,17 +16,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve your static files (HTML, CSS, etc.)
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
-    service: 'gmail', // Use 'smtp.mailgun.org' or another provider if needed
+    service:"gmail", 
     auth: {
-        user: process.env.EMAIL_USER, // Your email address
-        pass: process.env.EMAIL_PASS  // Your email password or app-specific password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
     }
 });
 
+
 // Endpoint to handle form submissions
-app.post('/submit-contact', (req, res) => {
+app.post('/submit-contact', async (req, res) => {
     try {
         // Process the form data and send a response
         // (You can perform any necessary processing here)
@@ -45,9 +45,8 @@ app.post('/submit-contact', (req, res) => {
         await transporter.sendMail(mailOptions);
         console.log('Email sent successfully');
 
-        // Serve the thank-you page
-        const thankYouContent = fs.readFileSync(path.join(__dirname, 'public', '/thank-you'), 'utf8');
-        res.send(thankYouContent);
+        // Redirect to thank-you page (this keeps the SPA structure)
+        res.redirect('/thank-you');
     } catch (error) {
         console.error('Error processing form:', error);
         res.status(500).send('Internal Server Error');
