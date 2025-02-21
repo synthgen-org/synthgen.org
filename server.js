@@ -17,14 +17,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,  // Use 587 for TLS or 465 for SSL
-    secure: true, // true for SSL, false for TLS
+    service:"gmail", 
     auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
     }
 });
+
 
 // Endpoint to handle form submissions
 app.post('/submit-contact', async (req, res) => {
