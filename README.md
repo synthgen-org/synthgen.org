@@ -1,4 +1,4 @@
-# SynthGen ✨ synthgen.org
+# ✨ synthgen.org
 
 [SynthGen.org](https://synthgen.org) provides AI-generated content badges or watermarks. 
 
