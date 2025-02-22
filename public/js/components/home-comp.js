@@ -20,6 +20,11 @@ class HomeComp extends BaseContent {
   font-size: 14px;
   line-height: 1.5;
   margin: 10px 0;
+  white-space: pre-wrap; /* Wrap content */
+  word-wrap: break-word;  /* Ensure long words break */
+  overflow-x: auto;       /* Allow horizontal scrolling */
+  max-width: 100%;        /* Ensure it doesn’t exceed container width */
+  display: block;
 }
 
 code {
@@ -94,16 +99,17 @@ code {
          margin-top: 50px;
     }
     
-    #example-content {
-      margin: 0 auto;
-      width: 600px;
-      background-color: #f0f0f0;
-      color: #000000;
-      padding: 1rem;
-      text-align: left;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 1.25rem;
-      line-height: 1.2em;
+#example-content {
+    margin: 0 auto;
+    max-width: 100%; /* Ensures it never exceeds the screen width */
+    width: 90%; /* Makes it fluid on smaller screens */
+    background-color: #f0f0f0;
+    color: #000000;
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    line-height: 1.2em;
   
       & .subhead::first-letter {
         initial-letter: 2;
@@ -153,6 +159,7 @@ code {
         font-size: small;
         margin-bottom: 1rem;
         color: var(--darker);
+        width: auto;
 
         & .synthgen {
           font-size: smaller;
@@ -200,6 +207,14 @@ code {
         padding: 5px;
       }
     }
+
+    /* Media query for extra small screens */
+    @media (max-width: 480px) {
+      .example-implementation {
+          font-size: 0.9rem;
+          padding: 0.5rem;
+      }
+  }
   </style>
 <div id="example-content" data-nosnippet>
     <section id="before">
