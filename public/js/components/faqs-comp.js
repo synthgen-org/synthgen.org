@@ -10,26 +10,32 @@ class FAQSComp extends BaseContent  {
         color: rgba(255, 204, 0, 1);
     }
 
-    pre {
-  background-color: rgba(112, 112, 112, 1);
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  overflow-x: auto; /* Adds horizontal scroll for long lines */
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 10px 0;
-}
 
-code {
-  background-color: rgba(112, 112, 112, 1);
-  padding: 2px 4px;
-  border-radius: 3px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
-  color: rgba(105, 226, 240, 1);
-}
+    pre {
+      background-color: rgba(112, 112, 112, 1);
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      overflow-x: auto; /* Adds horizontal scroll for long lines */
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 10px 0;
+      white-space: pre-wrap; /* Wrap content */
+      word-wrap: break-word;  /* Ensure long words break */
+      overflow-x: auto;       /* Allow horizontal scrolling */
+      max-width: 100%;        /* Ensure it doesn’t exceed container width */
+      display: block;
+    }
+    
+    code {
+      background-color: rgba(112, 112, 112, 1);
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      color: rgba(105, 226, 240, 1);
+    }
 
 .columns {
   display: flex;
