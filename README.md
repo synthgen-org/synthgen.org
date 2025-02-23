@@ -11,3 +11,5 @@ To run:
 npm install 
 
 node server.js
+
+Todo: fill out today
