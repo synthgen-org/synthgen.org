@@ -110,15 +110,3 @@ Have questions or need help? Feel free to reach out to us:
 ---
 
 Thank you for visiting the synthgen.org website repository! Together, we can build a more transparent and trustworthy digital ecosystem. 🌟
-```
-
----
-
-### Key Sections Included:
-1. **About Synthgen**: Explains the purpose and mission of Synthgen.
-2. **Website Features**: Lists the pages and features of the website.
-3. **Getting Started**: Provides instructions for setting up the project locally.
-4. **Project Structure**: Describes the organization of files and folders.
-5. **Contributing**: Guidelines for contributing to the project.
-6. **License**: Information about the MIT License.
-7. **Contact**: Ways to get in touch for support or questions.
