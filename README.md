@@ -105,7 +105,6 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 Have questions or need help? Feel free to reach out to us:
 - **Email**: [support@synthgen.org](mailto:support@synthgen.org)
 - **Website**: [https://synthgen.org](https://synthgen.org)
-- **GitHub Issues**: [Open an issue](https://github.com/synthgen-org/synthgen.org/issues) in this repository.
 
 ---
 
