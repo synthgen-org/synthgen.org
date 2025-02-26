@@ -54,9 +54,19 @@ To set up the synthgen.org website locally or contribute to the project, follow 
    ```bash
    cd synthgen-website
    ```
-3. **Open the Project**:
-   - Open the project in your code editor.
-   - Launch `index.html` in your browser to view the website.
+3. **Create a `.env` File**:  
+   In the project root, create a new file named `.env` and add the following content:  
+   ```plaintext
+   PORT=8080
+   ENVIRONMENT=development
+   EMAIL_USER=[Your email address]
+   EMAIL_PASS=[Your Gmail app password]
+   ```  
+   > **Note:** If you need help generating a Google app password, follow [this guide from Google](https://support.google.com/accounts/answer/185833?hl=en).  
+
+4. **Open the Project**:  
+   - Open the project in your code editor.  
+   - Launch `index.html` in your browser to view the website.  
 
 ---
 
