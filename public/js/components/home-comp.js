@@ -191,7 +191,7 @@ code {
         font-family: 'Arial', sans-serif;
         background-color: rgba(0, 0, 0, .4);
         color:#ffffff;
-        padding: 5px;
+        padding: 15px;
       }
 
     & #after:before {
@@ -204,7 +204,7 @@ code {
         font-family: 'Arial', sans-serif;
         background-color: rgba(0, 0, 0, .4);
         color:#ffffff;
-        padding: 5px;
+        padding: 15px;
       }
     }
 
