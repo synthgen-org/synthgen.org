@@ -62,7 +62,7 @@ To set up the synthgen.org website locally or contribute to the project, follow 
    EMAIL_USER=[Your email address]
    EMAIL_PASS=[Your Gmail app password]
    ```  
-   > **Note:** If you need help generating a Google app password, follow [this guide from Google](https://support.google.com/accounts/answer/185833?hl=en).  
+   ( > **Note:** If you need help generating a Google app password, follow [this guide from Google](https://support.google.com/accounts/answer/185833?hl=en). )
 
 4. **Open the Project**:  
    - Open the project in your code editor.  
