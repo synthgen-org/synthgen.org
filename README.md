@@ -64,9 +64,21 @@ To set up the synthgen.org website locally or contribute to the project, follow 
    ```  
    ( > **Note:** If you need help generating a Google app password, follow [this guide from Google](https://support.google.com/accounts/answer/185833?hl=en). )
 
-4. **Open the Project**:  
+4. **Install Dependencies**:  
+   ```bash
+   npm install
+   ```  
+
+5. **Start the Development Server**:  
+   ```bash
+   npm start
+   ```  
+   This will launch the website at `http://localhost:8080/` (or the port specified in `.env`).  
+
+6. **Open the Project**:  
    - Open the project in your code editor.  
-   - Launch `index.html` in your browser to view the website.  
+   - If necessary, modify `.env` to match your setup.  
+   - Visit `http://localhost:8080/` in your browser to view the site.  
 
 ---
 
