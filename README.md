@@ -1,5 +1,11 @@
 # ✨ synthgen.org website
 
+[![Website](https://img.shields.io/website?down_message=offline&label=synthgen.org&up_message=online&url=https%3A%2F%2Fsynthgen.org)](https://synthgen.org)
+[![GitHub license](https://img.shields.io/github/license/synthgen-org/synthgen-website)](LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/synthgen-org/synthgen-website)](https://github.com/synthgen-org/synthgen-website/issues)
+[![GitHub stars](https://img.shields.io/github/stars/synthgen-org/synthgen-website?style=social)](https://github.com/synthgen-org/synthgen-website/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/synthgen-org/synthgen-website?style=social)](https://github.com/synthgen-org/synthgen-website/network/members)
+
 Welcome to the **synthgen.org** website repository! This project is the official website for Synthgen, a platform dedicated to empowering transparency in the AI era by providing tools to mark and authenticate AI-generated content.
 
 ---
