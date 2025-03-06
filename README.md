@@ -1,8 +1,6 @@
 # ✨ synthgen.org website
 
 [![Website](https://img.shields.io/website?down_message=offline&label=synthgen.org&up_message=online&url=https%3A%2F%2Fsynthgen.org)](https://synthgen.org)
-[![GitHub license](https://img.shields.io/github/license/synthgen-org/synthgen-website)](LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/synthgen-org/synthgen-website)](https://github.com/synthgen-org/synthgen-website/issues)
 [![GitHub stars](https://img.shields.io/github/stars/synthgen-org/synthgen-website?style=social)](https://github.com/synthgen-org/synthgen-website/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/synthgen-org/synthgen-website?style=social)](https://github.com/synthgen-org/synthgen-website/network/members)
 
